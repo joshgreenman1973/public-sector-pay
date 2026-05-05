@@ -1,0 +1,511 @@
+{
+  "_metadata": {
+    "compiled_date": "2026-05-05",
+    "compiled_by": "Researched directly from city/agency CBAs, official pay schedules, and department careers pages.",
+    "scope": "Apples-to-apples comparison of base annual salary for the same four roles across 13 large U.S. cities.",
+    "salary_basis": "BASE annual salary only — excludes overtime, longevity bonuses (where separated from base), holiday pay, uniform allowance, shift differentials, education incentives, certification pay, and benefits. Where a CBA pays longevity inside the base step, that is noted.",
+    "roles_included": {
+      "police_officer": "Rank-and-file patrol officer, lowest sworn rank, post-academy.",
+      "firefighter": "Rank-and-file firefighter, lowest rank, post-academy. Standard firefighter schedules (commonly 56 hrs/week) are reflected in the published annual figures; these are the contract's annual base.",
+      "sanitation_worker": "City-employed refuse collection truck operator. Several cities contract residential refuse to private firms (Boston, Seattle, San Francisco, in part Phoenix) — those are marked N/A.",
+      "transit_bus_operator": "Bus operator at the regional transit authority that serves the city (MTA, MBTA, SEPTA, WMATA, LA Metro, SFMTA, MTS, King County Metro, CTA, METRO Houston, DART, VIA, Valley Metro). These are typically NOT city employees; they work for the transit authority. San Diego MTS and Phoenix Valley Metro contract operations to private companies."
+    },
+    "important_caveats": [
+      "Civil-service pay schedules are a different number from take-home pay. Most officers/firefighters earn meaningfully more in total compensation due to overtime, longevity, holiday pay, and detail/specialty pay.",
+      "'Years to top' refers to the standard step progression in the pay schedule. Some cities have longevity steps that continue past the nominal top step.",
+      "Where a city's CBA was unavailable or scanned-image-only, figures may be drawn from official department careers pages, which can lag the current contract by months.",
+      "Several CBAs are recently expired or in renegotiation as of compilation date; that is flagged per cell."
+    ]
+  },
+
+  "rpp_2023": {
+    "_source": "U.S. Bureau of Economic Analysis, Regional Price Parities by MSA (MARPP), All Items, 2023.",
+    "_url": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area",
+    "New York": 112.6, "Los Angeles": 114.7, "Chicago": 102.5, "Houston": 99.7,
+    "Phoenix": 104.7, "Philadelphia": 102.4, "San Antonio": 94.3, "San Diego": 110.7,
+    "Dallas": 102.5, "San Francisco": 117.6, "Boston": 110.4, "Seattle": 112.7,
+    "Washington, D.C.": 109.5
+  },
+  "nyc_all_in_estimates": {
+    "_note": "Base salary in NYC contracts is misleadingly low because longevity pay, holiday pay, uniform allowance, night-shift differential and overtime are all paid OUTSIDE the base step. The figures below are reported by the city or department as 'all-in' top-step compensation including those add-ons (excluding overtime). Useful when comparing NYC to cities where longevity is folded into the base step.",
+    "police_officer": {
+      "all_in_top_step": 131500,
+      "source_url": "https://www.nyc.gov/office-of-the-mayor/news/239-23/mayor-adams-olr-commissioner-campion-tentative-contract-agreement-pba-providing",
+      "components": "Base $85,292 + longevity (3-yr increments) + holiday pay + night-shift differential + uniform allowance"
+    },
+    "firefighter": {
+      "all_in_top_step": 130000,
+      "source_url": "https://www.joinfdny.com/careers/firefighter/",
+      "components": "Base $105,146 + holiday pay + night differential + 15% night-tour bonus + longevity"
+    },
+    "sanitation_worker": {
+      "all_in_top_step": 110000,
+      "source_url": "https://www.nyc.gov/site/dsny/careers/sanitation-workers/salary-benefits.page",
+      "components": "Base $92,093 + longevity + night-shift premium"
+    }
+  },
+  "cities": [
+    {
+      "city": "New York", "state": "NY", "msa_pop_million": 18.9, "lat": 40.7128, "lon": -74.0060,
+      "roles": {
+        "police_officer": {
+          "entry_base": 60882, "top_base": 85292, "years_to_top": 5.5,
+          "source_url": "https://nypdrecruit.com/pages/police-officer-salary-benefits",
+          "cba_url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/sgned-pba-mou-2017-2025.pdf",
+          "source_type": "department_careers_page",
+          "effective_date": "2024-08", "union": "PBA",
+          "notes": "PBA contract expired 7/31/2025; successor under negotiation. With longevity, holiday pay, uniform allowance and differentials, total comp at top step reaches ~$131,500 (city's 'all-in' figure)."
+        },
+        "firefighter": {
+          "entry_base": 54122, "top_base": 105146, "years_to_top": 5.5,
+          "source_url": "https://www.joinfdny.com/careers/firefighter/",
+          "cba_url": "https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page",
+          "source_type": "department_careers_page",
+          "effective_date": "2024", "union": "UFA",
+          "notes": "Top base $105,146 is base only; with holiday/night-shift/longevity, top firefighter avg total comp commonly exceeds $130k."
+        },
+        "sanitation_worker": {
+          "entry_base": 44821, "top_base": 92093, "years_to_top": 5.5,
+          "source_url": "https://www.nyc.gov/site/dsny/careers/sanitation-workers/salary-benefits.page",
+          "cba_url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/sanitation-workers-12-28-2022-%2002-27-2028.pdf",
+          "source_type": "cba_with_dept_page",
+          "effective_date": "2022-12-28", "union": "USA Local 831",
+          "notes": "CBA term Dec 28, 2022 – Feb 27, 2028."
+        },
+        "transit_bus_operator": {
+          "entry_base": null, "top_base": 85462, "years_to_top": null,
+          "source_url": "https://www.twulocal100.org/2023-contract-wage-chart",
+          "cba_url": "https://www.twulocal100.org/sites/twulocal100.org/files/contract_v5.pdf",
+          "source_type": "union_wage_chart",
+          "effective_date": "2025-05-16", "union": "TWU Local 100", "agency": "MTA NYCT",
+          "notes": "Top hourly $41.0875 × 2,080 = $85,462 annualized. CBA term May 2023 – May 2026. Entry rate not in published wage chart — see CBA Appendix."
+        }
+      }
+    },
+    {
+      "city": "Los Angeles", "state": "CA", "msa_pop_million": 12.9, "lat": 34.0522, "lon": -118.2437,
+      "roles": {
+        "police_officer": {
+          "entry_base": 86193, "top_base": 109000, "years_to_top": 5,
+          "source_url": "https://www.joinlapd.com/salary-and-benefits",
+          "cba_url": "https://cao.lacity.gov/mous/MOU24-23.pdf",
+          "source_type": "department_careers_page",
+          "effective_date": "2024", "union": "LAPPL",
+          "notes": "Approximations from joinlapd.com; total comp with POST/longevity bonuses materially higher. MOU 24 covers FY 2022-23 through 2026-27."
+        },
+        "firefighter": {
+          "entry_base": 87883, "top_base": 128286, "years_to_top": 3,
+          "source_url": "https://www.joinlafd.org/salary-and-benefits",
+          "cba_url": "https://cao.lacity.gov/mous/MOU23-24.pdf",
+          "source_type": "department_careers_page",
+          "effective_date": "2024", "union": "UFLAC", "notes": ""
+        },
+        "sanitation_worker": {
+          "entry_base": 62138, "top_base": 85273, "years_to_top": 5,
+          "source_url": "https://personnel.lacity.gov/jobs/position-information/index.cfm?job_id=3580",
+          "cba_url": "https://cao.lacity.gov/mous/",
+          "source_type": "city_personnel_class_spec",
+          "effective_date": "2024", "union": "SEIU Local 721 (MOU 36)",
+          "notes": "Refuse Collection Truck Operator (Class 3580). LA Sanitation is a city department."
+        },
+        "transit_bus_operator": {
+          "entry_base": 53765, "top_base": 88545, "years_to_top": 6,
+          "source_url": "https://libraryarchives.metro.net/dpgtl/CBAs/2022-2027-SMART-CBA-Final-20230113.pdf",
+          "cba_url": "https://libraryarchives.metro.net/dpgtl/CBAs/2022-2027-SMART-CBA-Final-20230113.pdf",
+          "source_type": "cba",
+          "effective_date": "2022-07-01", "union": "SMART-TD", "agency": "LA Metro",
+          "notes": "Years-to-top reduces to 5 effective July 1, 2026. Hourly $25.81 entry → $42.57 top × 2,080."
+        }
+      }
+    },
+    {
+      "city": "Chicago", "state": "IL", "msa_pop_million": 9.2, "lat": 41.8781, "lon": -87.6298,
+      "roles": {
+        "police_officer": {
+          "entry_base": 61782, "top_base": 119976, "years_to_top": 20,
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "cba_url": "http://directives.chicagopolice.org/contracts/FOP_Contract.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01", "union": "FOP Lodge 7",
+          "notes": "Schedule D, Police Officer Grade D-1. Entry $61,782 (probationary academy); $88,170 post-academy step 1; $119,976 at 20 yrs (Step 9); max $123,444 at 25 yrs (Step 10)."
+        },
+        "firefighter": {
+          "entry_base": 62466, "top_base": 103914, "years_to_top": 20,
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "cba_url": "https://www.chicago.gov/content/dam/city/depts/dol/Collective%20Bargaining%20Agreement3/cffu%20local%202%20cba%20final.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2021-01-01", "union": "CFFU Local 2",
+          "notes": "Schedule F. The 2025 Classification & Pay Plan still shows the 1/1/2021 schedule for Local 2. New 5-yr CBA approved by City Council 10/16/2025 includes 21-25% raise over life with retro pay — these figures will rise once the updated schedule is published."
+        },
+        "sanitation_worker": {
+          "entry_base": 62568, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "cba_url": "https://www.chicago.gov/content/dam/city/depts/dol/Collective%20Bargaining%20Agreements/BU-8-Teamsters-Local-700-CBA-2022-2027-Final.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01", "union": "Teamsters Local 700",
+          "notes": "Motor Truck Driver, Schedule P. Top step needs verification — Schedule P shows longevity steps progressing well above $100k at 25 yrs but the Sanitation Laborer / General Laborer ladders are different from Motor Truck Driver. Conservative top-step base not asserted."
+        },
+        "transit_bus_operator": {
+          "entry_base": 56430, "top_base": 85508, "years_to_top": 3.75,
+          "source_url": "https://atu241chicago.org/member_resources/cta_wages/",
+          "cba_url": null,
+          "source_type": "union_wage_page",
+          "effective_date": "2024", "union": "ATU Local 241", "agency": "CTA",
+          "notes": "$27.13/hr → $41.11/hr × 2,080. 45 months to top."
+        }
+      }
+    },
+    {
+      "city": "Houston", "state": "TX", "msa_pop_million": 7.5, "lat": 29.7604, "lon": -95.3698,
+      "roles": {
+        "police_officer": {
+          "entry_base": 81600, "top_base": null, "years_to_top": 3,
+          "source_url": "https://www.houstontx.gov/moc/2025/police-contract.html",
+          "cba_url": "https://hpou.org/wp-content/uploads/2025/07/2025-Meet-Confer-Executed.pdf",
+          "source_type": "press_release_with_meet_confer",
+          "effective_date": "2025-07-01", "union": "HPOU",
+          "notes": "First-year base $81,600 effective 7/1/2025 under new 5-year Meet & Confer agreement (36.5% lift over 5 years). Base scale tops at year 3; longevity continues to 25+ yrs. Full updated step schedule published at hpou.org/hpd-base-pay-list/."
+        },
+        "firefighter": {
+          "entry_base": 54207, "top_base": 71040, "years_to_top": 8,
+          "source_url": "https://www.houstontx.gov/fire/careers/compensation.html",
+          "cba_url": "https://interactive.khou.com/pdfs/CBA-FY-25-6-3-24-exe.pdf",
+          "source_type": "department_careers_page",
+          "effective_date": "2023-07-08", "union": "HPFFA Local 341",
+          "notes": "FY25 CBA (signed 6/3/2024) included 10% first-year raise; HFD compensation page may not yet reflect post-CBA figures. Verify current schedule."
+        },
+        "sanitation_worker": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "cba_url": null, "source_type": "needs_research",
+          "effective_date": null, "union": null,
+          "notes": "Houston Solid Waste Management Department employs refuse truck drivers. Specific pay grade for 'Refuse Truck Driver' / 'Solid Waste Equipment Operator' not extracted from city HR classification list."
+        },
+        "transit_bus_operator": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://twulocal260.com/", "cba_url": null,
+          "source_type": "needs_research",
+          "effective_date": null, "union": "TWU Local 260", "agency": "METRO Houston",
+          "notes": "Current TWU 260 contract terms not publicly posted."
+        }
+      }
+    },
+    {
+      "city": "Phoenix", "state": "AZ", "msa_pop_million": 5.0, "lat": 33.4484, "lon": -112.0740,
+      "roles": {
+        "police_officer": {
+          "entry_base": 74360, "top_base": 107827, "years_to_top": 9,
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "cba_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/labor-relations/2024-2026%20unit%204%20(plea)%20mou.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2025-03-03", "union": "PLEA (Unit 4)",
+          "notes": "Class 62210 Police Officer. Hourly $35.75 → $51.84 × 2,080. PLEA MOU 2024-2026."
+        },
+        "firefighter": {
+          "entry_base": 35110, "top_base": 76626, "years_to_top": 16,
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "cba_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/labor-relations/2024-2026%20unit%205%20(iaff)%20mou.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2025-03-03", "union": "IAFF Local 493 (Unit 5)",
+          "notes": "Class 61010 Firefighter, 56-hour schedule (standard FF shift). Hourly $12.06 → $26.31 × 56hrs/wk × ~52wks. With paramedic/HazMat certifications, top reaches $93,123 (Class 6101E)."
+        },
+        "sanitation_worker": {
+          "entry_base": 54454, "top_base": 72966, "years_to_top": null,
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "cba_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/labor-relations/2024-2026%20unit%201%20(liuna)%20mou.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2025-03-03", "union": "LIUNA Local 777 (Unit 1)",
+          "notes": "Solid Waste Equipment Operator (Class 72080). Hourly $26.18 → $35.08 × 2,080."
+        },
+        "transit_bus_operator": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.valleymetro.org/", "cba_url": null,
+          "source_type": "private_contractor",
+          "effective_date": null, "union": "ATU Local 1433 (via contractors)", "agency": "Valley Metro",
+          "notes": "Valley Metro contracts bus operations to private companies (Transdev, First Transit). Operator wages set by contractor CBAs, not Valley Metro directly."
+        }
+      }
+    },
+    {
+      "city": "Philadelphia", "state": "PA", "msa_pop_million": 6.2, "lat": 39.9526, "lon": -75.1652,
+      "roles": {
+        "police_officer": {
+          "entry_base": 67934, "top_base": 98156, "years_to_top": null,
+          "source_url": "https://joinphillypd.com/index.php/salary-benefits/overview",
+          "cba_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/individuals/labor-management-relations/plrb/proposed/2025/fop-5-phila-pf-c-24-80-e.pdf",
+          "source_type": "department_careers_page",
+          "effective_date": "2024 (pre-7/1/2024 5% raise)", "union": "FOP Lodge 5",
+          "notes": "Figures from joinphillypd.com may pre-date the 7/1/2024 5% raise; current numbers ~5-8% higher. Aug 2025 Act 111 award added 3% raises FY26 and FY27."
+        },
+        "firefighter": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://iaff22.org/newsdoc/21-24_contract_blast_email.pdf",
+          "cba_url": "https://iaff22webcmslive.velarium.com/UploadedDocuments/CMS_doc/NotOfficial-Local22ConsolidatedContract.pdf",
+          "source_type": "needs_research",
+          "effective_date": null, "union": "IAFF Local 22",
+          "notes": "2021-2024 CBA expired; raise schedule was 2.75%/3.50%/3.50%. Salary appendix dollar amounts not extracted from CBA PDF (binary content)."
+        },
+        "sanitation_worker": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "cba_url": "https://www.phila.gov/2024-11-22-city-of-philadelphia-afscme-district-council-33-announce-1-year-contract-agreement-for-fiscal-year-2025/",
+          "source_type": "needs_research",
+          "effective_date": null, "union": "AFSCME DC 33",
+          "notes": "Average DC 33 sanitation worker salary widely reported at ~$42,574 (CBS Philly, July 2025). Title-specific entry/top from city pay ranges database not extracted. Post-strike July 2025 settlement: 3% raises annually for 3 years + new 5th step + $1,500 bonus."
+        },
+        "transit_bus_operator": {
+          "entry_base": 52354, "top_base": 69826, "years_to_top": null,
+          "source_url": "https://wwww.septa.org/news/twucontractapproval/",
+          "cba_url": null, "source_type": "agency_announcement",
+          "effective_date": "2024-07", "union": "TWU Local 234", "agency": "SEPTA",
+          "notes": "$25.17/hr entry × 2,080; $33.57/hr top × 2,080. Subsequent 3.5%/yr raises in Dec 2025 successor agreement raise these by ~7% over the next two years."
+        }
+      }
+    },
+    {
+      "city": "San Antonio", "state": "TX", "msa_pop_million": 2.6, "lat": 29.4241, "lon": -98.4936,
+      "roles": {
+        "police_officer": {
+          "entry_base": 58452, "top_base": 79620, "years_to_top": null,
+          "source_url": "https://www.sa.gov/Directory/Departments/SAPD/About/Careers/Benefits/SAPD-Pay-Scales",
+          "cba_url": "https://www.sanantonio.gov/Portals/0/Files/Atty/CollectiveBargaining/Police/Collective%20Bargaining%20Agreement%202022-2026.pdf",
+          "source_type": "department_pay_scales_page",
+          "effective_date": "2025", "union": "SAPOA",
+          "notes": "Patrol Officer base range $58,452–$79,620 (cadet $56,000). CBA term May 2022 – Sep 2026 with +4% raises in 4/2025 and 4/2026."
+        },
+        "firefighter": {
+          "entry_base": 64176, "top_base": 72252, "years_to_top": 5,
+          "source_url": "https://www.sa.gov/Directory/Departments/SAFD/Recruiting/Wages-Benefits",
+          "cba_url": "http://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Relations/Commissions/CBA-SAFD.pdf",
+          "source_type": "department_careers_page",
+          "effective_date": "2025", "union": "IAFF Local 624",
+          "notes": "Monthly base × 12: Probationary $5,348/mo = $64,176/yr; 19-60 mo $5,913/mo = $70,956/yr; 61+ mo $6,021/mo = $72,252/yr. Plus 3% per 5 yrs longevity to max 18%. Aug 2024 settlement: 21.3% total raise package over contract life."
+        },
+        "sanitation_worker": {
+          "entry_base": 40498, "top_base": 47403, "years_to_top": null,
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "cba_url": null, "source_type": "city_pay_plan",
+          "effective_date": "2025-10-01", "union": null,
+          "notes": "Solid Waste Collection Truck Driver (Rear Loader) hourly $19.47–$22.79 × 2,080. Curbside Collection Worker is lower ($18.47–$19.60); Sr. Equipment Operator higher ($22.20–$27.30, $46k–$57k)."
+        },
+        "transit_bus_operator": {
+          "entry_base": 46696, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.viainfo.net/employment/", "cba_url": null,
+          "source_type": "agency_employment_page",
+          "effective_date": "2024", "union": "ATU Local 694", "agency": "VIA Metropolitan Transit",
+          "notes": "Entry $22.45/hr; $25.25/hr at month 12. Top hourly not publicly posted. Negotiations active 2024-25."
+        }
+      }
+    },
+    {
+      "city": "San Diego", "state": "CA", "msa_pop_million": 3.3, "lat": 32.7157, "lon": -117.1611,
+      "roles": {
+        "police_officer": {
+          "entry_base": 82118, "top_base": 115128, "years_to_top": 5,
+          "source_url": "https://www.sandiego.gov/sites/default/files/sdpd_pay_scale.pdf",
+          "cba_url": "https://www.sandiego.gov/humanresources/laborrelations/mous",
+          "source_type": "department_pay_scale_pdf",
+          "effective_date": "2024", "union": "SDPOA",
+          "notes": "Police Officer I post-academy $82,118 (recruit $73,237); Police Officer II top step base $115,128. Years-to-top reflects PO I→II progression."
+        },
+        "firefighter": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "cba_url": null, "source_type": "needs_research",
+          "effective_date": null, "union": "IAFF Local 145",
+          "notes": "Salary table PDF binary fetch failed — needs direct read of saltable.pdf line for Fire Fighter II."
+        },
+        "sanitation_worker": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.sandiego.gov/humanresources/laborrelations/mous",
+          "cba_url": null, "source_type": "needs_research",
+          "effective_date": null, "union": "AFSCME Local 127",
+          "notes": "City of San Diego employs sanitation drivers under People's Ordinance (single-family residential). Title-specific pay not extracted."
+        },
+        "transit_bus_operator": {
+          "entry_base": 47237, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.sdmts.com/inside-mts/media-center/news-releases/mts-bumps-starting-pay-bus-operators-2271-hour",
+          "cba_url": null, "source_type": "private_contractor",
+          "effective_date": "2023-02", "union": "Teamsters Local 542 / 683", "agency": "San Diego MTS",
+          "notes": "MTS bus operations are run by private contractors (Transdev). Entry $22.71/hr × 2,080. Top hourly not publicly posted."
+        }
+      }
+    },
+    {
+      "city": "Dallas", "state": "TX", "msa_pop_million": 8.1, "lat": 32.7767, "lon": -96.7970,
+      "roles": {
+        "police_officer": {
+          "entry_base": 70314, "top_base": 91734, "years_to_top": 9,
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Attachment%20B-3.pdf",
+          "cba_url": "https://ballotpedia.org/Police_union_collective_bargaining_agreement_for_the_city_of_Dallas,_Texas_(2023-2025)",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2024-10-01", "union": "Dallas Police Association",
+          "notes": "Step 9 base $91,734 at year 9; Senior Corporal Grade 2 P tops at $91,736 at Year 1-2. FY25-26 budget proposes raising start to $81,232."
+        },
+        "firefighter": {
+          "entry_base": 75397, "top_base": 98376, "years_to_top": 9,
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Uniform%20Fire%20Rescue%20Pay%20Schedule%2001.01.25.pdf",
+          "cba_url": null, "source_type": "city_salary_schedule",
+          "effective_date": "2025-01-01", "union": "DFFA",
+          "notes": "Fire-Rescue Officer Pay Grade 1 FF, Step 9 monthly $8,198 × 12 = $98,376."
+        },
+        "sanitation_worker": {
+          "entry_base": 42640, "top_base": null, "years_to_top": null,
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "cba_url": null, "source_type": "city_salary_schedule",
+          "effective_date": "2025-01-01", "union": null,
+          "notes": "Sanitation Truck Driver (CDL A) entry $20.50/hr × 2,080. Top not extracted from civilian schedule."
+        },
+        "transit_bus_operator": {
+          "entry_base": 38480, "top_base": 59800, "years_to_top": 5,
+          "source_url": "https://www.atu1338.com/", "cba_url": null,
+          "source_type": "salary_aggregator",
+          "effective_date": "2024", "union": "ATU Local 1338", "agency": "DART",
+          "notes": "Entry $18.50/hr, top $28.75/hr. DART/ATU 1338 contract not posted on agency site; figures from public salary aggregators — verify."
+        }
+      }
+    },
+    {
+      "city": "San Francisco", "state": "CA", "msa_pop_million": 4.6, "lat": 37.7749, "lon": -122.4194,
+      "roles": {
+        "police_officer": {
+          "entry_base": 119262, "top_base": 151892, "years_to_top": 7,
+          "source_url": "https://careers.sf.gov/classifications/?classCode=Q002",
+          "cba_url": "https://sfdhr.org/mous",
+          "source_type": "city_classification_page",
+          "effective_date": "2025-07-01", "union": "POA",
+          "notes": "Q002 Police Officer, biweekly $4,587 → $5,842 × 26. With POST/longevity total comp at top step ~$178,394. Highest base entry/top in dataset."
+        },
+        "firefighter": {
+          "entry_base": 93846, "top_base": 135000, "years_to_top": 5,
+          "source_url": "https://www.sf.gov/sites/default/files/2024-01/fire-fighters-union-local-798-unit-1-2023-2026.pdf",
+          "cba_url": "https://www.sf.gov/sites/default/files/2024-01/fire-fighters-union-local-798-unit-1-2023-2026.pdf",
+          "source_type": "cba",
+          "effective_date": "2023-07-01", "union": "Local 798 Unit 1",
+          "notes": "H2 Firefighter Step 1 $93,846. Top of 5 H2 steps approximately $135,000 base before specialty/longevity (verify exact appendix figure)."
+        },
+        "sanitation_worker": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.recology.com/", "cba_url": null,
+          "source_type": "private_contractor",
+          "effective_date": null, "union": "Teamsters Local 350", "agency": null,
+          "notes": "SF residential refuse collection performed by Recology, a private contractor. No city-employed sanitation workers."
+        },
+        "transit_bus_operator": {
+          "entry_base": 65208, "top_base": 100360, "years_to_top": 5,
+          "source_url": "https://twusf.org/wp-content/uploads/MTA-9163-Transit-Operators-July-1-2024-thru-June-30-2027.pdf",
+          "cba_url": "https://twusf.org/wp-content/uploads/MTA-9163-Transit-Operators-July-1-2024-thru-June-30-2027.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-07-01", "union": "TWU Local 250-A", "agency": "SFMTA",
+          "notes": "Class 9163 Transit Operator, $31.35/hr → $48.25/hr × 2,080. CBA term Jul 2024 – Jun 2027."
+        }
+      }
+    },
+    {
+      "city": "Boston", "state": "MA", "msa_pop_million": 4.9, "lat": 42.3601, "lon": -71.0589,
+      "roles": {
+        "police_officer": {
+          "entry_base": 75342, "top_base": 110818, "years_to_top": 25,
+          "source_url": "https://www.boston.gov/sites/default/files/file/2025/08/BPPA%20Executive%20Order%20and%20Salary%20Scale%202020-2024.pdf",
+          "cba_url": "https://www.boston.gov/sites/default/files/file/2025/08/BPPA%20Executive%20Order%20and%20Salary%20Scale%202020-2024.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-07-01", "union": "BPPA",
+          "notes": "1st Year Days base $75,342; 3rd Year base $92,568; through 25-yr longevity $110,818. Quinn Bill education incentives add 10-25%. FY25 1-yr extension adds 2%."
+        },
+        "firefighter": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.boston.gov/news/mayor-michelle-wu-announces-four-year-contract-boston-firefighters-iaff-local-718",
+          "cba_url": null, "source_type": "needs_research",
+          "effective_date": "2024-07-01", "union": "IAFF Local 718",
+          "notes": "New 4-year CBA 2024-2028 ratified Dec 22, 2025 (8.5% compounded). Salary appendix not yet posted online."
+        },
+        "sanitation_worker": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.wastedive.com/news/boston-collection-contract-litter-rodent/647405/",
+          "cba_url": null, "source_type": "private_contractor",
+          "effective_date": null, "union": null, "agency": null,
+          "notes": "Boston residential refuse collection performed by Capitol Waste Services under contract; current contract expires 2027. No city-employed curbside sanitation workers."
+        },
+        "transit_bus_operator": {
+          "entry_base": 62400, "top_base": null, "years_to_top": 4,
+          "source_url": "https://www.mbta.com/news/2024-07-03/mbta-achieves-historic-labor-agreements-entire-workforce",
+          "cba_url": null, "source_type": "agency_announcement",
+          "effective_date": "2023-07-01", "union": "Boston Carmen's Union ATU Local 589", "agency": "MBTA",
+          "notes": "Entry $30/hr × 2,080. Top hourly not in announcement; estimated ~$35-36/hr after 18% cumulative 4-year increase."
+        }
+      }
+    },
+    {
+      "city": "Seattle", "state": "WA", "msa_pop_million": 4.0, "lat": 47.6062, "lon": -122.3321,
+      "roles": {
+        "police_officer": {
+          "entry_base": 118000, "top_base": 136104, "years_to_top": 4.5,
+          "source_url": "https://harrell.seattle.gov/wp-content/uploads/sites/23/2024/04/Att-1-%E2%80%93-SPOG-Collective-Bargaining-Agreement.pdf",
+          "cba_url": "https://harrell.seattle.gov/wp-content/uploads/sites/23/2024/04/Att-1-%E2%80%93-SPOG-Collective-Bargaining-Agreement.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-10-21", "union": "SPOG",
+          "notes": "2024 ratified CBA Step 1 was $103,944; 2025 contract amendment raises entry to ~$118,000 with $126,336 reached at 6 months and $136,104 top base."
+        },
+        "firefighter": {
+          "entry_base": 102048, "top_base": 121488, "years_to_top": 3.5,
+          "source_url": "http://clerk.seattle.gov/~CFS/CF_321577.pdf",
+          "cba_url": "http://clerk.seattle.gov/~CFS/CF_321577.pdf",
+          "source_type": "cba",
+          "effective_date": "2021-12-22", "union": "IAFF Local 27",
+          "notes": "Recruit $102,048; Step 5 $121,488 at 42 months (hourly $58.41). CBA Dec 2021 – Dec 2026."
+        },
+        "sanitation_worker": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.seattle.gov/utilities/about/solid-waste-contracts",
+          "cba_url": null, "source_type": "private_contractor",
+          "effective_date": null, "union": null, "agency": null,
+          "notes": "Seattle Public Utilities contracts collection to Recology and Waste Management. No city-employed sanitation workers."
+        },
+        "transit_bus_operator": {
+          "entry_base": 57387, "top_base": null, "years_to_top": null,
+          "source_url": "https://kingcountymetro.blog/2023/08/16/king-county-metros-largest-union-approves-3-year-labor-contract-with-higher-salaries-and-expanded-training-opportunities/",
+          "cba_url": "https://cdn.kingcounty.gov/-/media/king-county/depts/executive/documents/labor-relations/documents/agreements/410C0123.ashx",
+          "source_type": "cba",
+          "effective_date": "2022-11-01", "union": "ATU Local 587", "agency": "King County Metro",
+          "notes": "Entry $27.59/hr × 2,080. Top step not extracted from CBA appendix. Contract Nov 2022 – Oct 2025; ~17% cumulative increase suggests top hourly ~$42-45."
+        }
+      }
+    },
+    {
+      "city": "Washington, D.C.", "state": "DC", "msa_pop_million": 6.3, "lat": 38.9072, "lon": -77.0369,
+      "roles": {
+        "police_officer": {
+          "entry_base": 75433, "top_base": 111442, "years_to_top": null,
+          "source_url": "https://dchr.dc.gov/sites/default/files/dc/sites/DCHR/page_content/attachments/FY26%20MPD%20Union.pdf",
+          "cba_url": "https://mayor.dc.gov/release/mayor-bowser-and-chairman-mendelson-announce-mpd-collective-bargaining-agreement",
+          "source_type": "official_salary_schedule",
+          "effective_date": "2025-10-05", "union": "DC Police Union (FOP/MPD)",
+          "notes": "FY26 schedule, 4.25% increase Oct 5, 2025. Step 1 $75,433 → Step 9 $111,442. Post-probation Step 1 $78,601; post-5yr retention Step 1 $82,531."
+        },
+        "firefighter": {
+          "entry_base": 62236, "top_base": 92113, "years_to_top": null,
+          "source_url": "https://dchr.dc.gov/sites/default/files/dc/sites/DCHR/page_content/attachments/FEMS%20Union%20FY24%20with%20FTO%20May%202025%201.pdf",
+          "cba_url": "https://oca.dc.gov/publication/collective-bargaining-agreement-dc-government-and-national-association-firefighters",
+          "source_type": "official_salary_schedule",
+          "effective_date": "2025-05-18", "union": "IAFF Local 36",
+          "notes": "FY25 schedule (3.5% increase as of Oct 8, 2023, posted May 18, 2025). Class 01 Private Step 1 $62,236 → Step 9 $92,113. Through 30-yr longevity Step 9 reaches $110,536."
+        },
+        "sanitation_worker": {
+          "entry_base": null, "top_base": null, "years_to_top": null,
+          "source_url": "https://careerpaths.dc.gov/page/sanitation-worker-0",
+          "cba_url": null, "source_type": "needs_research",
+          "effective_date": null, "union": null,
+          "notes": "DC DPW Solid Waste classifications RW-3501-04 (entry) / RW-3501-05 (experienced). Wage Grade RW pay table not extracted from DCHR."
+        },
+        "transit_bus_operator": {
+          "entry_base": 61339, "top_base": null, "years_to_top": null,
+          "source_url": "https://www.wmata.com/about/news/Metro-ATU-Local-689-agree-to-new-collective-bargaining-agreement.cfm",
+          "cba_url": "https://www.wmata.com/about/records/upload/L689-CBA-2020-2024-2.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-07-01", "union": "ATU Local 689", "agency": "WMATA",
+          "notes": "Entry $29.49/hr × 2,080. New CBA Jul 2024–Jun 2028: 0%/3%/3%/3.5%."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Public sector pay across 13 large U.S. cities</title>
+<meta name="description" content="Side-by-side comparison of contract pay schedules for police officers, firefighters, sanitation workers and transit bus operators in 13 large U.S. cities, drawn from official collective bargaining agreements and city pay schedules." />
+<style>
+  :root {
+    --ink: #15171a;
+    --muted: #6a6f76;
+    --line: #e3e5e9;
+    --bg: #fafafa;
+    --card: #ffffff;
+    --accent: #1f5fa6;
+    --hi: #d65b1f;
+    --good: #1d7a42;
+    --bad: #b3261e;
+    --na: #a9aeb6;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--ink); background: var(--bg);
+  }
+  header {
+    background: var(--ink); color: #fff;
+    padding: 28px 24px 22px; border-bottom: 4px solid var(--hi);
+  }
+  header .wrap { max-width: 1280px; margin: 0 auto; }
+  header h1 { font-weight: 600; font-size: 26px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  header .lede { color: #c9ccd1; margin: 0; max-width: 880px; font-size: 14px; }
+  nav.tabs { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
+  nav.tabs .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; gap: 4px; }
+  nav.tabs button {
+    background: transparent; border: 0; padding: 14px 16px; font: inherit; font-weight: 500;
+    color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent;
+  }
+  nav.tabs button.active { color: var(--ink); border-bottom-color: var(--hi); }
+  main { max-width: 1280px; margin: 0 auto; padding: 24px; }
+  section.tab { display: none; }
+  section.tab.active { display: block; }
+
+  .controls {
+    display: flex; flex-wrap: wrap; gap: 16px; align-items: end;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 8px; padding: 16px; margin-bottom: 16px;
+  }
+  .controls label {
+    display: flex; flex-direction: column; gap: 4px;
+    font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .controls select {
+    font: 14px -apple-system, system-ui, sans-serif;
+    padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: #fff; min-width: 240px;
+  }
+  .stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px; margin-bottom: 16px;
+  }
+  .stat {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 8px; padding: 12px 14px;
+  }
+  .stat .label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+  .stat .val { font: 600 20px/1.1 -apple-system, system-ui, sans-serif; }
+  .stat .sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  table {
+    width: 100%; border-collapse: collapse;
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+    font-size: 14px;
+  }
+  th, td { padding: 10px 12px; text-align: right; vertical-align: top; }
+  th:first-child, td:first-child { text-align: left; }
+  th.l, td.l { text-align: left; }
+  thead th {
+    background: #f3f4f6; border-bottom: 1px solid var(--line);
+    font-weight: 600; color: var(--ink); cursor: pointer; user-select: none;
+    position: sticky; top: 49px; z-index: 5;
+  }
+  thead th .arrow { color: var(--muted); margin-left: 4px; }
+  tbody tr { border-bottom: 1px solid var(--line); }
+  tbody tr:last-child { border-bottom: 0; }
+  tbody tr:hover { background: #fbfcfe; }
+  tbody tr.highrank td.rank { color: var(--good); font-weight: 600; }
+  tbody tr.lowrank td.rank { color: var(--bad); font-weight: 600; }
+  td.bar-cell { padding: 4px 0; }
+  .bar { display: flex; align-items: center; height: 24px; padding: 0 8px; gap: 6px; }
+  .bar .fill { background: var(--accent); height: 12px; border-radius: 2px; opacity: 0.85; min-width: 1px; }
+  .bar .label { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  td.muted, .muted { color: var(--muted); }
+  td.na { color: var(--na); font-style: italic; }
+  .tag {
+    display: inline-block; font-size: 10px; padding: 2px 6px; border-radius: 10px;
+    background: #f3f4f6; color: var(--muted); margin-left: 4px; vertical-align: middle;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .tag.cba { background: #e8f0fa; color: #1f5fa6; }
+  .tag.dept { background: #fff4eb; color: #d65b1f; }
+  .tag.private { background: #fdecea; color: #b3261e; }
+  .tag.gap { background: #f3f4f6; color: var(--muted); }
+  .source-link { font-size: 11px; color: var(--accent); text-decoration: none; }
+  .source-link:hover { text-decoration: underline; }
+  details { margin-top: 4px; font-size: 12px; color: var(--muted); }
+  details summary { cursor: pointer; user-select: none; }
+
+  .meta-block {
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    padding: 18px 22px; line-height: 1.6;
+  }
+  .meta-block h2 { font-size: 18px; margin-top: 24px; margin-bottom: 8px; }
+  .meta-block h2:first-child { margin-top: 0; }
+  .meta-block ul { padding-left: 22px; }
+  .meta-block li { font-size: 14px; margin-bottom: 6px; }
+  .meta-block a { color: var(--accent); }
+
+  footer {
+    max-width: 1280px; margin: 24px auto; padding: 16px 24px;
+    color: var(--muted); font-size: 12px; border-top: 1px solid var(--line);
+  }
+  @media (max-width: 800px) {
+    table { font-size: 13px; }
+    th, td { padding: 7px 8px; }
+    thead th { position: static; }
+    nav.tabs { position: static; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Public sector pay across 13 large U.S. cities</h1>
+    <p class="lede">
+      Side-by-side comparison of <strong>contract base salary</strong> for police officers, firefighters, sanitation workers
+      and transit bus operators &mdash; from collective bargaining agreements, official city pay schedules and department careers pages.
+      Every figure is sourced; click the link in any cell to read the original document. This is base pay only — actual paid wages
+      with overtime, longevity, holiday and education incentives are typically much higher.
+    </p>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="wrap">
+    <button data-tab="role" class="active">By role</button>
+    <button data-tab="city">By city</button>
+    <button data-tab="nyc">NYC focus</button>
+    <button data-tab="methodology">Methodology &amp; sources</button>
+  </div>
+</nav>
+
+<main>
+  <section class="tab active" id="tab-role">
+    <div class="controls">
+      <label>Role
+        <select id="role-pick"></select>
+      </label>
+      <label>Compare on
+        <select id="metric-pick">
+          <option value="entry_base">Entry-step base salary</option>
+          <option value="top_base" selected>Top-step base salary</option>
+          <option value="years_to_top">Years to top step</option>
+        </select>
+      </label>
+    </div>
+    <div id="role-stats" class="stats"></div>
+    <table id="tbl-role">
+      <thead>
+        <tr>
+          <th class="l">City</th>
+          <th>Entry base</th>
+          <th>Top base</th>
+          <th>Years to top</th>
+          <th class="l">Source</th>
+          <th class="l">Effective</th>
+          <th class="l">Union</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="bar-chart" style="margin-top:18px"></div>
+  </section>
+
+  <section class="tab" id="tab-city">
+    <div class="controls">
+      <label>City
+        <select id="city-pick"></select>
+      </label>
+    </div>
+    <div id="city-stats" class="stats"></div>
+    <table id="tbl-city">
+      <thead>
+        <tr>
+          <th class="l">Role</th>
+          <th>Entry base</th>
+          <th>Top base</th>
+          <th>Years to top</th>
+          <th class="l">Source</th>
+          <th class="l">Effective</th>
+          <th class="l">Union</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="city-notes" style="margin-top:18px"></div>
+  </section>
+
+  <section class="tab" id="tab-nyc">
+    <div class="controls">
+      <label class="toggle" style="text-transform:none;letter-spacing:0;color:var(--ink);font-size:13px;flex-direction:row;align-items:center;gap:8px">
+        <input type="checkbox" id="nyc-col" />
+        Adjust for cost of living (BEA RPP, 2023)
+      </label>
+      <label class="toggle" style="text-transform:none;letter-spacing:0;color:var(--ink);font-size:13px;flex-direction:row;align-items:center;gap:8px">
+        <input type="checkbox" id="nyc-allin" />
+        Use NYC "all-in" top-step (base + longevity + holiday + differentials, where reported)
+      </label>
+    </div>
+    <div id="nyc-summary"></div>
+    <div id="nyc-ranks"></div>
+  </section>
+
+  <section class="tab" id="tab-methodology">
+    <div class="meta-block" id="methodology"></div>
+  </section>
+</main>
+
+<footer>
+  Compiled <span id="compiled-date"></span> from official city collective bargaining agreements, city pay schedules and department careers pages.
+  All sourced figures are base pay only. Open-source on GitHub.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
