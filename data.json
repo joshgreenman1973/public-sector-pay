@@ -224,6 +224,18 @@
           "source_type": "needs_research",
           "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "teacher": {
+          "entry_base": 64789,
+          "top_base": 120408,
+          "years_to_top": 22,
+          "max_with_longevity": 122583,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://files.uft.org/contract2023/DOE-salary-schedules.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "UFT",
+          "notes": "NYC DOE. Lanes BA C1, BA+30 C1+PD, MA C2, MA+30 C6, etc. Step 8B reached ~year 7-8; longevity differentials L5/L10/L13/L15/L18/L20/L22 push to true top at ~22 years. Top base shown is BA C1 8B+L22; max_with_longevity is MA C2 8B+L22."
         }
       }
     },
@@ -345,6 +357,70 @@
           "source_type": "needs_research",
           "source_url": "https://cao.lacity.gov/mous",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 181614,
+          "years_to_top": null,
+          "max_with_longevity": 191010,
+          "max_years": 20,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://cao.lacity.gov/mous/MOU24-22.pdf",
+          "cba_url": "https://cao.lacity.gov/mous/MOU24-22.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-06-29",
+          "union": "LAPPL",
+          "notes": "Detective III, class 2223-3, schedule 8, top step (Step 7) = $181,614. Longevity: +$120/biwk at 10y, +$240 at 15y, +$360 at 20y ($9,396/yr). Max with 20-yr longevity = $191,010 base."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 172051,
+          "years_to_top": null,
+          "max_with_longevity": 181447,
+          "max_years": 20,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://cao.lacity.gov/mous/MOU24-22.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-06-29",
+          "union": "LAPPL",
+          "notes": "Sergeant II, class 2227-2, schedule 7, top step = $172,051. Plus $9,396 longevity at 20y = $181,447."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 202244,
+          "years_to_top": null,
+          "max_with_longevity": 237719,
+          "max_years": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://cao.lacity.gov/mous/MOU24-22.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-06-29",
+          "union": "LAPPL",
+          "notes": "Lieutenant II, class 2232-2, top step at schedule 10 = $202,244. With time-in-grade Lt II progresses through schedules 11/12/13 to $237,719."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 261522,
+          "years_to_top": 0,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://cao.lacity.gov/mous/MOU25-27.pdf",
+          "cba_url": "https://cao.lacity.gov/mous/MOU25-27.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-06-29",
+          "union": "LAPCO (MOU 25)",
+          "notes": "Captain I, class 2244-1, range 9046, Step 7 = $261,522. Captain II $275,887; Captain III $291,225. Per Article 5.2, promotion places employee directly on Step 7."
+        },
+        "teacher": {
+          "entry_base": 66639,
+          "top_base": null,
+          "years_to_top": null,
+          "max_with_longevity": 116383,
+          "comparison_basis": "approximate",
+          "source_url": "https://www.lausd.org/cms/lib/CA01000043/Centricity/domain/280/salary%20tables/T_Table_JulDec2024.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "UTLA",
+          "notes": "LAUSD T-table. Pay Scale Group 1 Level 1 = $66,639. No clean 'BA only top step' \u2014 advancement requires units beyond BA. MA top w/ DR differential + 4 Career Increments on C-basis = $116,383."
         }
       }
     },
@@ -526,6 +602,18 @@
           "source_type": "needs_research",
           "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "teacher": {
+          "entry_base": 64469,
+          "top_base": 105635,
+          "years_to_top": 26,
+          "max_with_longevity": 112266,
+          "comparison_basis": "approximate",
+          "source_url": "https://contract.ctulocal1.org/cps/a-1a",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "CTU",
+          "notes": "CPS, 208-day. Lanes I (BA) through VI (PhD/2 Masters). Lane I Step 1 = $64,470. 26 steps; Step 26 is COLA-only. BA top approx $105,635; MA Lane III approx $112,266 (per pre-correction 2024-25 figures)."
         }
       }
     },
@@ -647,6 +735,64 @@
           "source_type": "needs_research",
           "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "police_detective": {
+          "entry_base": 103323,
+          "top_base": 139946,
+          "years_to_top": 12,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.hpdcareer.com/benefits.html",
+          "cba_url": "https://hpou.org/wp-content/uploads/2025/07/2025-Meet-Confer-Executed.pdf",
+          "source_type": "department_careers_page",
+          "effective_date": "2025-07-01",
+          "union": "HPOU",
+          "notes": "Senior Police Officer (12+ Years) base range $103,323\u2013$139,946 from HPD official recruiting microsite hpdcareer.com under 2025 'Generational Contract' (10% raise effective 7/1/2025). HPD Investigator is an assignment within Officer/Sr Officer ranks, not a separate civil-service class."
+        },
+        "police_sergeant": {
+          "entry_base": 114645,
+          "top_base": 159928,
+          "years_to_top": 5,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.hpdcareer.com/benefits.html",
+          "cba_url": "https://hpou.org/wp-content/uploads/2025/07/2025-Meet-Confer-Executed.pdf",
+          "source_type": "department_careers_page",
+          "effective_date": "2025-07-01",
+          "union": "HPOU",
+          "notes": "Sergeant (5+ Years) $114,645\u2013$159,928."
+        },
+        "police_lieutenant": {
+          "entry_base": 129298,
+          "top_base": 177874,
+          "years_to_top": 7,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.hpdcareer.com/benefits.html",
+          "source_type": "department_careers_page",
+          "effective_date": "2025-07-01",
+          "union": "HPOU",
+          "notes": "Lieutenant (7+ Years) $129,298\u2013$177,874."
+        },
+        "police_captain": {
+          "entry_base": 148100,
+          "top_base": 208363,
+          "years_to_top": 9,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.hpdcareer.com/benefits.html",
+          "source_type": "department_careers_page",
+          "effective_date": "2025-07-01",
+          "union": "HPOU",
+          "notes": "Captain (9+ Years) $148,100\u2013$208,363."
+        },
+        "teacher": {
+          "entry_base": 64000,
+          "top_base": 89500,
+          "years_to_top": 40,
+          "max_with_longevity": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://teacherquality.nctq.org/dmsView/houston_2425",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "Non-CB (TX); HFT/HEA prof. associations",
+          "notes": "HISD Non-NES 10-month: Step 0 $64,000 \u2192 Step 40 $89,500. No BA/MA lane differentiation (TX standard). NES (New Education System) campuses use a separate subject-specific table $65k-$101k+ depending on grade/subject."
         }
       }
     },
@@ -768,6 +914,62 @@
           "source_type": "needs_research",
           "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "police_detective": {
+          "entry_base": 74360,
+          "top_base": 107827,
+          "years_to_top": 8,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "PLEA",
+          "notes": "Phoenix has NO separate Detective civil-service class; detective is an assignment within Officer rank. Same as patrol top-step ($107,827, Class 62210 step 9)."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 141918,
+          "years_to_top": 6,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "PPSLA",
+          "notes": "Class 62220 Police Sergeant, 7 steps, top = $68.23/hr \u00d7 2080 = $141,918."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 171371,
+          "years_to_top": 5,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "PPSLA",
+          "notes": "Class 62230 Police Lieutenant, 5 steps, top = $82.39/hr \u00d7 2080 = $171,371."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 219211,
+          "years_to_top": null,
+          "comparison_basis": "approximate",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "Unrepresented (executive/management)",
+          "notes": "Phoenix has NO Captain rank \u2014 Commander (Class 62240) is the next rank above Lieutenant. Range $84.30\u2013$105.39/hr; top of range = $219,211. Range-based not stepped (exempt management)."
+        },
+        "teacher": {
+          "entry_base": 52000,
+          "top_base": null,
+          "years_to_top": null,
+          "max_with_longevity": 58127,
+          "comparison_basis": "approximate",
+          "source_url": "https://www.pxu.org/documents/departments/talent-division%2Fjobs/employment/salary-schedules-2024-2025/640658",
+          "source_type": "department_careers_page",
+          "effective_date": "2024-25",
+          "union": "PUCSO/CSEA",
+          "notes": "Phoenix Union HSD. Live PDF page is JS-loaded, can't auto-fetch. District publicly states minimum starting $52,000 / $58,127 with master's; avg salary 'over $70,000' per district announcement. Phoenix is split among many K-8 districts; PUHSD is the largest secondary district."
         }
       }
     },
@@ -919,6 +1121,18 @@
           "source_type": "needs_research",
           "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "teacher": {
+          "entry_base": 54146,
+          "top_base": 80821,
+          "years_to_top": 11,
+          "max_with_longevity": 91273,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://pft.org/sites/default/files/media/documents/2024/2024-2025%20PFT%20Salary%20Schedule%20(2)_0.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "PFT",
+          "notes": "10-month Teacher schedule, Steps 1-11. BA Step 11 $80,821; MA Step 11 $91,273; MA+30 $99,534; Doctorate $103,512. Senior Career Teacher (post-Step 11) $107,495. Includes 5% raise per Sept 2024 contract extension."
         }
       }
     },
@@ -1040,6 +1254,63 @@
           "source_type": "needs_research",
           "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 95268,
+          "years_to_top": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/Atty/CollectiveBargaining/Police/COSA%20SAPOA%20CBA%20Tentative%20Agreement.pdf",
+          "cba_url": "https://www.sanantonio.gov/Portals/0/Files/Atty/CollectiveBargaining/Police/COSA%20SAPOA%20CBA%20Tentative%20Agreement.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-04-01",
+          "union": "SAPOA",
+          "notes": "SAPOA CBA Attachment 2 (4/1/2025): Detective Investigator step D top = $7,939/mo \u00d7 12 = $95,268."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 104088,
+          "years_to_top": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/Atty/CollectiveBargaining/Police/COSA%20SAPOA%20CBA%20Tentative%20Agreement.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-04-01",
+          "union": "SAPOA",
+          "notes": "Sergeant top step C $8,674/mo \u00d7 12 = $104,088. New scale 4/1/2026 raises to $108,252."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 116604,
+          "years_to_top": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/Atty/CollectiveBargaining/Police/COSA%20SAPOA%20CBA%20Tentative%20Agreement.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-04-01",
+          "union": "SAPOA",
+          "notes": "Lieutenant top step C $9,717/mo \u00d7 12 = $116,604."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 133788,
+          "years_to_top": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/Atty/CollectiveBargaining/Police/COSA%20SAPOA%20CBA%20Tentative%20Agreement.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-04-01",
+          "union": "SAPOA",
+          "notes": "Captain top step C $11,149/mo \u00d7 12 = $133,788."
+        },
+        "teacher": {
+          "entry_base": 58400,
+          "top_base": 74178,
+          "years_to_top": 30,
+          "max_with_longevity": 76178,
+          "comparison_basis": "approximate",
+          "source_url": "https://www.saisd.net/page/compensation-resource-manual",
+          "source_type": "department_careers_page",
+          "effective_date": "2024-25",
+          "union": "SA Alliance of Teachers (no CB)",
+          "notes": "SAISD. 2024-25 starting $58,400 (raised to $60,000 BA / $62,000 MA for 2025-26). Top Step 30 figures from 2025-26 schedule (~$74k BA / $76k MA). 2024-25 figures slightly lower."
         }
       }
     },
@@ -1159,6 +1430,71 @@
           "source_type": "needs_research",
           "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 125715,
+          "years_to_top": 4,
+          "max_with_longevity": 132001,
+          "max_years": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "cba_url": "https://www.sandiego.gov/sites/default/files/sdpd_pay_scale.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "SDPOA",
+          "notes": "Police Detective (1684), Step E top: $60.44/hr \u00d7 2080 = $125,715. Plus 5% Detective specialty pay. Longevity 5% per POA MOU Art. 63."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 145371,
+          "years_to_top": 1,
+          "max_with_longevity": 152640,
+          "max_years": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "SDPOA",
+          "notes": "Police Sergeant (1696), Step E: $69.89/hr \u00d7 2080 = $145,371. With 5% longevity = $152,640."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 184163,
+          "years_to_top": 1,
+          "max_with_longevity": 193371,
+          "max_years": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "SDPOA",
+          "notes": "Police Lieutenant (1683), Step E: $88.54/hr \u00d7 2080 = $184,163. With 5% longevity = $193,371."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 218816,
+          "years_to_top": 1,
+          "max_with_longevity": 229757,
+          "max_years": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "SDPOA / unrep mgmt",
+          "notes": "Police Captain (1680), Step E: $105.20/hr \u00d7 2080 = $218,816."
+        },
+        "teacher": {
+          "entry_base": 58902,
+          "top_base": 93087,
+          "years_to_top": 17,
+          "max_with_longevity": 121652,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://sandiegounified.community.diligentoneplatform.com/document/4c0d8d70-aedc-46f7-af93-e1cac75af5e3/",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "SDEA",
+          "notes": "Salary Plan 0160, 184-day. Grades 010 (BA) \u2192 014 (BA+90 w/MA). 17 steps; longevity stipend at step 76. Top base shown is Grade 010 (BA) Step 17 $93,087; max_with_longevity is highest Grade 014 Step 17 $121,652."
         }
       }
     },
@@ -1282,6 +1618,62 @@
           "source_type": "needs_research",
           "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 100243,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Attachment%20B-3.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2024-10-01",
+          "union": "DPA (no CBA; Ch. 143 civil service)",
+          "notes": "Police Senior Corporal (class 46016, Year 4* P-4) $100,243 = Dallas detective/investigator analog. Police Officer top (Year 9* P-9) is $91,734."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 110649,
+          "years_to_top": 3,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Attachment%20B-3.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2024-10-01",
+          "union": "DPA",
+          "notes": "Class 46011, Year 3* P-3 = $110,649."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 122136,
+          "years_to_top": 3,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Attachment%20B-3.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2024-10-01",
+          "union": "DPA",
+          "notes": "Class 46013, Year 3* P-3 = $122,136."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 134815,
+          "years_to_top": 3,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Attachment%20B-3.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2024-10-01",
+          "union": "DPA",
+          "notes": "Class 46014, Year 3* S P-3 = $134,815. Schedule states 'Police Captain is an Obsolete Rank' \u2014 being phased out; only top-step row shown because all current Captains are at top step."
+        },
+        "teacher": {
+          "entry_base": 62000,
+          "top_base": 66500,
+          "years_to_top": 10,
+          "max_with_longevity": 104000,
+          "comparison_basis": "approximate",
+          "source_url": "https://teacherquality.nctq.org/dmsView/DallasISD2024-2025CompensationHandbook100424",
+          "source_type": "department_careers_page",
+          "effective_date": "2024-25",
+          "union": "Alliance-AFT (no CB)",
+          "notes": "Dallas ISD Teachers Introductory Compensation Schedule (new hires only): Novice $62,000 \u2192 Step 10+ $66,500. After year 1, returning teachers move to Teacher Excellence Initiative (TEI) effectiveness-based pay (Progressing/Proficient/Exemplary/Master/Distinguished, $65k-$104k+). max_with_longevity shown = TEI Distinguished ceiling. Average teacher base = $70,217."
         }
       }
     },
@@ -1413,6 +1805,62 @@
           "source_type": "needs_research",
           "source_url": "https://careers.sf.gov/classifications/",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 176462,
+          "years_to_top": 0,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=Q050",
+          "source_type": "city_classification_page",
+          "effective_date": "2025-07-01",
+          "union": "POA",
+          "notes": "SFPD has no separate Detective civil-service class. Investigators are titled 'Inspector' but classified as Q050 Sergeant. So Detective and Sergeant base figures are identical = $176,462. Single-step classification."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 176462,
+          "years_to_top": 0,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=Q050",
+          "source_type": "city_classification_page",
+          "effective_date": "2025-07-01",
+          "union": "POA",
+          "notes": "Q050 Sergeant: $84.84/hr \u00d7 2080 = $176,462. Single-step. Eligibility requires min 2 years SFPD service as Q002."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 201474,
+          "years_to_top": 0,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=Q060",
+          "source_type": "city_classification_page",
+          "effective_date": "2025-07-01",
+          "union": "POA",
+          "notes": "Q060 Lieutenant: $96.86/hr \u00d7 2080 = $201,474. Single-step."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 254592,
+          "years_to_top": 0,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=Q080",
+          "source_type": "city_classification_page",
+          "effective_date": "2025-07-01",
+          "union": "POA / management",
+          "notes": "Q080 Captain: $122.40/hr \u00d7 2080 = $254,592. Single-step, exempt from overtime."
+        },
+        "teacher": {
+          "entry_base": 73689,
+          "top_base": 109618,
+          "years_to_top": 21,
+          "max_with_longevity": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://uesf.org/members/contracts-salary-schedules/",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "UESF",
+          "notes": "SFUSD. PSGs by credential and units beyond BA: B6 (BA <30), B7 (BA+30-59), B8 (BA+60+/MA). B6 Step 1 (BA only) $73,689 total; B6 step 21 $109,618 (last step). B8 (BA+60+/MA) substantially higher. Plus QTEA + FWEA add-ons."
         }
       }
     },
@@ -1571,6 +2019,18 @@
           "source_type": "needs_research",
           "source_url": "https://www.boston.gov/departments/human-resources",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "teacher": {
+          "entry_base": 66043,
+          "top_base": 110057,
+          "years_to_top": 9,
+          "max_with_longevity": 116082,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://btu.org/contracts/",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "BTU",
+          "notes": "BPS, 9-step traditional schedule. Lanes Bachelors, B+15, Masters, M+15..M+75, Doctorate. Figures are BTU 9/1/2023 schedule + 2.5% per 2024-27 contract retro to 9/1/2024. BA Step 1 $66,043; BA Step 9 $110,057; MA Step 9 $116,082."
         }
       }
     },
@@ -1693,6 +2153,66 @@
           "source_type": "needs_research",
           "source_url": "https://www.seattle.gov/human-resources/compensation",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 160418,
+          "years_to_top": 4.5,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.seattle.gov/documents/departments/opa/legislation/2024-2027%20spog%20cba%20w%20moas%20links%20-%20signed.pdf",
+          "cba_url": "https://www.seattle.gov/documents/departments/opa/legislation/2024-2027%20spog%20cba%20w%20moas%20links%20-%20signed.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-12-31",
+          "union": "SPOG",
+          "notes": "Detective in Seattle is an ASSIGNMENT premium (4% of base) on top of Police Officer top step, NOT a separate rank. Top-step PO base $154,248 \u00d7 1.04 = $160,418. Detective-Homicide/CSI/FIT = 6% premium ($163,503)."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 177480,
+          "years_to_top": 1.5,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.seattle.gov/documents/departments/opa/legislation/2024-2027%20spog%20cba%20w%20moas%20links%20-%20signed.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-12-31",
+          "union": "SPOG",
+          "notes": "Police Sergeant top step (18 mos) = $14,790/mo \u00d7 12 = $177,480. Patrol premium 1.5% adds for patrol sergeants."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 217668,
+          "years_to_top": 2.5,
+          "max_with_longevity": 245965,
+          "max_years": 30,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.seattle.gov/documents/departments/opa/legislation/spma%202024%20to%202027%20cba%20final%202025-09-24%20for%20signature%20-%20signed.pdf",
+          "cba_url": "https://www.seattle.gov/documents/departments/opa/legislation/spma%202024%20to%202027%20cba%20final%202025-09-24%20for%20signature%20-%20signed.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-12-31",
+          "union": "SPMA",
+          "notes": "Lieutenant top step (30 mos) effective 12/31/2025 = $18,139/mo \u00d7 12 = $217,668. Longevity per Appendix A.6: 6% at 15y, 7% at 20y, 12% at 25y, 13% at 30y \u2192 max ~$245,965."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 258852,
+          "years_to_top": 2.5,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.seattle.gov/documents/departments/opa/legislation/spma%202024%20to%202027%20cba%20final%202025-09-24%20for%20signature%20-%20signed.pdf",
+          "source_type": "cba",
+          "effective_date": "2025-12-31",
+          "union": "SPMA",
+          "notes": "Captain top step (30 mos) effective 12/31/2025 = $21,571/mo \u00d7 12 = $258,852. Precinct Captain assignment +6%; Violent Crimes/Night/Traffic +2-3%."
+        },
+        "teacher": {
+          "entry_base": 61578,
+          "top_base": 84947,
+          "years_to_top": 12,
+          "max_with_longevity": 118665,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://mysps.seattleschools.org/wp-content/uploads/sites/106/2024/07/FINAL-Certificated-Non-Supervisory-3.7-2024-25.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "SEA",
+          "notes": "SPS Lanes 100 (BA) \u2192 906 (PhD). Lane 100 Step 1 base $61,578 (180-day); Lane 100 caps at Step 12 base $84,947 (TOTAL with contractual/tech/responsibility days $102,025). Lane 906 (PhD) Step 15 base $118,665. Advancement requires both years AND credit hours."
         }
       }
     },
@@ -1872,6 +2392,18 @@
           "source_type": "needs_research",
           "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "teacher": {
+          "entry_base": 64640,
+          "top_base": 102498,
+          "years_to_top": 16,
+          "max_with_longevity": 126474,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://dcps.dc.gov/sites/default/files/dc/sites/dcps/page_content/attachments/ET%2015%20FY%202024-2028%20Pay%20Schedule.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-25",
+          "union": "WTU",
+          "notes": "DCPS ET-15 10-month schedule. Lanes Bachelors, BA+15, BA+30/Masters, MA+30, MA+60/PhD. Steps 1-11, 12-15 band, then 16. BA top Step 12-15 $102,498 (BA does not get Step 16). MA top Step 16 $126,474. MA+60/PhD top Step 16 $133,623."
         }
       }
     }
