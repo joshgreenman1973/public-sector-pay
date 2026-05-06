@@ -170,12 +170,18 @@
           "notes": "Police Communications Technician. Top step ~5 yrs; base only, excludes night-shift differential."
         },
         "librarian": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 47135,
+          "top_base": 58906,
+          "years_to_top": 7,
+          "max_with_longevity": 67934,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "library_system",
+          "source_url": "https://local1321.org/system/files/2025-09/2025_07_01_local_1321_members_salaries.pdf",
+          "cba_url": "https://local1321.org/salaries",
+          "source_type": "union_wage_chart",
+          "effective_date": "2025-07-01",
+          "union": "Queens Library Guild Local 1321 (DC 37)",
+          "notes": "Queens Public Library Librarian (MLS-required). NYPL/BPL use DC 37 Local 1930 (separate scale, not pulled here). Max-with-longevity ~$67,934 after 20yrs incl. increment payments."
         },
         "building_inspector": {
           "entry_base": null,
@@ -295,12 +301,16 @@
           "notes": "Years-to-top reduces to 5 effective July 1, 2026. Hourly $25.81 entry \u2192 $42.57 top \u00d7 2,080."
         },
         "dispatcher_911": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 58484,
+          "top_base": 103272,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
           "source_url": "https://personnel.lacity.gov/jobs/position-information/index.cfm?job_id=2207",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "cba_url": "https://cao.lacity.gov/mous/",
+          "source_type": "city_classification_page",
+          "effective_date": "2024-07-01",
+          "union": "Coalition of LA City Unions / EAA",
+          "notes": "Police Service Representative (Class 2207). Range from official LA Personnel job spec; exact MOU step schedule not yet pulled from CAO MOU PDF."
         },
         "librarian": {
           "entry_base": null,
@@ -540,20 +550,28 @@
           "notes": "Schedule E Grade 5 Captain (title 9175). Step 9 max rate $167,628. Longevity Step 10 (25yr) $171,780; Step 11 red-circle $174,264."
         },
         "dispatcher_911": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 53340,
+          "top_base": 94368,
+          "years_to_top": 25,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2022-01-01",
+          "union": "Public Safety Employees Union - Unit II (Schedule I)",
+          "notes": "Police Communications Operator I (title 8601, grade I13). Step 1 $53,340 \u2192 Step 12 (25 yrs) $94,368. Schedule I dated 1/1/2022 in current pay plan; may be retro-adjusted by current CBA."
         },
         "librarian": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 65328,
+          "top_base": 95592,
+          "years_to_top": 8,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01",
+          "union": "AFSCME Council 31",
+          "notes": "Class 0501 Librarian I, Schedule G Grade 4. Chicago Public Library is a city department."
         },
         "building_inspector": {
           "entry_base": null,
@@ -614,6 +632,34 @@
           "effective_date": "2024-25",
           "union": "CTU",
           "notes": "CPS, 208-day. Lanes I (BA) through VI (PhD/2 Masters). Lane I Step 1 = $64,470. 26 steps; Step 26 is COLA-only. BA top approx $105,635; MA Lane III approx $112,266 (per pre-correction 2024-25 figures)."
+        },
+        "code_enforcement_officer": {
+          "entry_base": 78960,
+          "top_base": 95100,
+          "years_to_top": 5,
+          "max_with_longevity": 139224,
+          "max_years": 25,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01",
+          "union": "AFSCME (Schedule B)",
+          "notes": "Health Code Enforcement Inspection Analyst (2391, B13). Step 1 (post-6mo) $78,960; Step 5 (5yr top base) $95,100; longevity to Step 12 (25+yr) $139,224. Entrance rate (first 6 mo) $66,612."
+        },
+        "it_analyst": {
+          "entry_base": 66612,
+          "top_base": 95100,
+          "years_to_top": 5,
+          "max_with_longevity": 139224,
+          "max_years": 25,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01",
+          "union": "AFSCME (Schedule B)",
+          "notes": "Application/Systems Analyst (06D8, B13). Schedule B Step 1 (post-6mo) $78,960; Step 5 (5yr) top base $95,100; entrance $66,612 first 6 months. Longevity Step 12 (25+yr) $139,224."
         }
       }
     },
@@ -673,20 +719,26 @@
           "notes": "Current TWU 260 contract terms not publicly posted."
         },
         "dispatcher_911": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 41106,
+          "top_base": 76310,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/hrfiles/compensation/list_job_classifications_abc.pdf",
+          "source_type": "city_classification_page",
+          "effective_date": "2025-07-01",
+          "union": "non-union (Texas)",
+          "notes": "Job code 644.2 9-1-1 Telecommunicator, Grade 14. Houston pay grade is open range (no step schedule)."
         },
         "librarian": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 45500,
+          "top_base": 83434,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/hrfiles/compensation/list_job_classifications_abc.pdf",
+          "source_type": "city_classification_page",
+          "effective_date": "2025",
+          "union": null,
+          "notes": "Class 902.2 Librarian I, Grade 16. Open-range biweekly $1,750-$3,209 \u00d7 26."
         },
         "building_inspector": {
           "entry_base": null,
@@ -697,20 +749,26 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "civil_engineer": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 61568,
+          "top_base": 117390,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/hrfiles/compensation/list_job_classifications_abc.pdf",
+          "source_type": "city_classification_page",
+          "effective_date": "2025-07-01",
+          "union": "non-union",
+          "notes": "Job code 778.2 Engineer-in-Training, Grade 22 ($61,568-$117,390). Houston has no city-titled 'Civil Engineer I' \u2014 graduate engineers enter as EIT."
         },
         "court_clerk": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 37856,
+          "top_base": 65494,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/hrfiles/compensation/list_job_classifications_abc.pdf",
+          "source_type": "city_classification_page",
+          "effective_date": "2025",
+          "union": null,
+          "notes": "Class 591.2 Deputy Courts Clerk Grade 11. Houston Municipal Court is a city dept."
         },
         "public_health_nurse": {
           "entry_base": null,
@@ -721,20 +779,26 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "city_plumber": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 45500,
+          "top_base": 83434,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/hrfiles/compensation/list_job_classifications_abc.pdf",
+          "source_type": "city_classification_page",
+          "effective_date": "2025-07-01",
+          "union": "non-union",
+          "notes": "Job code 524.2 Plumber, Grade 16 ($45,500-$83,434). Open-range, no step."
         },
         "parks_worker": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 35880,
+          "top_base": 46150,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/hrfiles/compensation/list_job_classifications_abc.pdf",
+          "source_type": "city_classification_page",
+          "effective_date": "2025",
+          "union": null,
+          "notes": "Class 511.9 Park Maintenance Aide, Grade 5. Open-range biweekly $1,380-$1,775 \u00d7 26."
         },
         "police_detective": {
           "entry_base": 103323,
@@ -793,6 +857,50 @@
           "effective_date": "2024-25",
           "union": "Non-CB (TX); HFT/HEA prof. associations",
           "notes": "HISD Non-NES 10-month: Step 0 $64,000 \u2192 Step 40 $89,500. No BA/MA lane differentiation (TX standard). NES (New Education System) campuses use a separate subject-specific table $65k-$101k+ depending on grade/subject."
+        },
+        "code_enforcement_officer": {
+          "entry_base": 45500,
+          "top_base": 83434,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "source_type": "city_classification_page",
+          "effective_date": "2024-2025",
+          "union": "Non-represented (HOPE)",
+          "notes": "Code Enforcement Officer I (795.2, grade 16). Open-range biweekly $1,750\u2013$3,209 \u00d7 26."
+        },
+        "accountant_auditor": {
+          "entry_base": 48048,
+          "top_base": 87984,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "source_type": "city_classification_page",
+          "effective_date": "2024-2025",
+          "union": "Non-represented",
+          "notes": "Accountant (342.1, grade 17). Open-range biweekly $1,848-$3,385 \u00d7 26."
+        },
+        "it_analyst": {
+          "entry_base": 45500,
+          "top_base": 83434,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "source_type": "city_classification_page",
+          "effective_date": "2024-2025",
+          "union": "Non-represented",
+          "notes": "Programmer Analyst I (452.1, grade 16). Open-range biweekly $1,750-$3,209 \u00d7 26."
+        },
+        "recreation_supervisor": {
+          "entry_base": 45500,
+          "top_base": 83434,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "source_type": "city_classification_page",
+          "effective_date": "2024-2025",
+          "union": "Non-represented",
+          "notes": "Recreation Supervisor (976.7, grade 16). Open range."
         }
       }
     },
@@ -852,20 +960,27 @@
           "notes": "Valley Metro contracts bus operations to private companies (Transdev, First Transit). Operator wages set by contractor CBAs, not Valley Metro directly."
         },
         "dispatcher_911": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 36858,
+          "top_base": 80454,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "AFSCME Local 2384 (Unit 003)",
+          "notes": "Job code 01830 Police Comm Operator. 17-step grid, $17.72-$38.68/hr \u00d7 2080. Trainee class 01740 starts at $35,110."
         },
         "librarian": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 42661,
+          "top_base": 93122,
+          "years_to_top": 16,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_range_report",
+          "effective_date": "2025",
+          "union": null,
+          "notes": "Class 30210 Librarian I, Range 053. 17 steps $20.51-$44.77/hr."
         },
         "building_inspector": {
           "entry_base": null,
@@ -876,20 +991,27 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "civil_engineer": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 47029,
+          "top_base": 102669,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "Unit 007 (Supervisors/Professionals)",
+          "notes": "Job code 20210 Civil Engineer I, 17-step grid $22.61-$49.36/hr."
         },
         "court_clerk": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 31845,
+          "top_base": 60029,
+          "years_to_top": 13,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_range_report",
+          "effective_date": "2025",
+          "union": null,
+          "notes": "Class 00510 Court/Legal Clerk I. Phoenix Municipal Court is a city dept."
         },
         "public_health_nurse": {
           "entry_base": null,
@@ -900,20 +1022,27 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "city_plumber": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 38688,
+          "top_base": 84469,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "AFSCME Local 2960 / Laborers",
+          "notes": "Job codes 74833/74834 Building Maint Wrkr*Plumber, 17-step grid $18.60-$40.61/hr. Phoenix has no standalone 'Plumber' class \u2014 role is Building Maint Worker w/ Plumber endorsement."
         },
         "parks_worker": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 32427,
+          "top_base": 55806,
+          "years_to_top": 11,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_range_report",
+          "effective_date": "2025",
+          "union": null,
+          "notes": "Class 40060 Groundskeeper, Range 132. 12 steps $15.69-$26.83/hr."
         },
         "police_detective": {
           "entry_base": 74360,
@@ -970,6 +1099,54 @@
           "effective_date": "2024-25",
           "union": "PUCSO/CSEA",
           "notes": "Phoenix Union HSD. Live PDF page is JS-loaded, can't auto-fetch. District publicly states minimum starting $52,000 / $58,127 with master's; avg salary 'over $70,000' per district announcement. Phoenix is split among many K-8 districts; PUHSD is the largest secondary district."
+        },
+        "code_enforcement_officer": {
+          "entry_base": 42661,
+          "top_base": 93122,
+          "years_to_top": 16,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "AFSCME Local 2384 / ASPTEA",
+          "notes": "Neighborhood Preservation Inspector (60670, grade 353). 17 steps $20.51-$44.77/hr."
+        },
+        "accountant_auditor": {
+          "entry_base": 38688,
+          "top_base": 84469,
+          "years_to_top": 16,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "Phoenix Employees Association (Unit 7)",
+          "notes": "Accountant I (03210). 17-step $18.60-$40.61/hr."
+        },
+        "it_analyst": {
+          "entry_base": 44803,
+          "top_base": 97781,
+          "years_to_top": 16,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "Phoenix Employees Association",
+          "notes": "Business Systems Analyst (09810). 17 steps $21.54-$47.01/hr."
+        },
+        "recreation_supervisor": {
+          "entry_base": 50627,
+          "top_base": 110510,
+          "years_to_top": 16,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "source_type": "city_salary_range_report",
+          "effective_date": "2026-04-27",
+          "union": "Middle Mgmt Unit 7",
+          "notes": "Recreation Supervisor (41170, grade 060). 17 steps $24.34-$53.13/hr."
         }
       }
     },
@@ -1200,12 +1377,15 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "librarian": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 45553,
+          "top_base": 68329,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
           "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_pay_plan",
+          "effective_date": "2025-10-01",
+          "union": null,
+          "notes": "Class 954 Librarian I, Pay Plan B Range 803."
         },
         "building_inspector": {
           "entry_base": null,
@@ -1224,12 +1404,15 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "court_clerk": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 43986,
+          "top_base": 54087,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
           "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_pay_plan",
+          "effective_date": "2025-10-01",
+          "union": null,
+          "notes": "Class 2292 Municipal Court of Record Clerk, Range 508."
         },
         "public_health_nurse": {
           "entry_base": null,
@@ -1248,12 +1431,15 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "parks_worker": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 37440,
+          "top_base": 38953,
+          "comparison_basis": "approximate",
+          "employer_type": "city",
           "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_pay_plan",
+          "effective_date": "2025-10-01",
+          "union": null,
+          "notes": "Class 7579 Maintenance Worker, Pay Plan A Range 500. Closest non-supervisor parks/grounds title."
         },
         "police_detective": {
           "entry_base": null,
@@ -1311,6 +1497,50 @@
           "effective_date": "2024-25",
           "union": "SA Alliance of Teachers (no CB)",
           "notes": "SAISD. 2024-25 starting $58,400 (raised to $60,000 BA / $62,000 MA for 2025-26). Top Step 30 figures from 2025-26 schedule (~$74k BA / $76k MA). 2024-25 figures slightly lower."
+        },
+        "code_enforcement_officer": {
+          "entry_base": 46185,
+          "top_base": 56791,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "source_type": "city_pay_plan",
+          "effective_date": "FY2025",
+          "union": "Classified non-uniform",
+          "notes": "Code Enforcement Officer (2116, grade 509). Open range."
+        },
+        "accountant_auditor": {
+          "entry_base": 45553,
+          "top_base": 68329,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "source_type": "city_pay_plan",
+          "effective_date": "FY2025",
+          "union": "Non-represented",
+          "notes": "Accountant (2220, grade 803)."
+        },
+        "it_analyst": {
+          "entry_base": 47830,
+          "top_base": 71746,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "source_type": "city_pay_plan",
+          "effective_date": "FY2025",
+          "union": "Non-represented",
+          "notes": "Technical System Specialist (2560, grade 804)."
+        },
+        "recreation_supervisor": {
+          "entry_base": 46185,
+          "top_base": 56791,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "source_type": "city_pay_plan",
+          "effective_date": "FY2025",
+          "union": "Classified non-uniform",
+          "notes": "Recreation Supervisor (2174, grade 509)."
         }
       }
     },
@@ -1368,20 +1598,28 @@
           "notes": "MTS bus operations are run by private contractors (Transdev). Entry $22.71/hr \u00d7 2,080. Top hourly not publicly posted."
         },
         "dispatcher_911": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 82896,
+          "top_base": 99948,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "Municipal Employees Association (MEA)",
+          "notes": "Class 1714 Police Dispatcher. 5 steps A-E, monthly $6,908-$8,329 \u00d7 12."
         },
         "librarian": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 68266,
+          "top_base": 82243,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": null,
+          "notes": "Class 1571 Librarian 1. 5 steps A-E hourly $32.82-$39.54 \u00d7 2080."
         },
         "building_inspector": {
           "entry_base": null,
@@ -1392,20 +1630,28 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "civil_engineer": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 100560,
+          "top_base": 121116,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "Municipal Employees Association (MEA)",
+          "notes": "Class 1153 Asst Engineer-Civil (entry licensed civil engineer). Steps A-E monthly $8,380-$10,093. Jr Engineer-Civil (1546) is sub-licensed: $86,904-$105,168."
         },
         "court_clerk": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 49692,
+          "top_base": 59782,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": null,
+          "notes": "Class 1386 Court Support Clerk 1, hourly $23.90 step A \u2192 $28.76 step E. SD Superior Court is state, but City has Court Support Clerk class for City Attorney's office."
         },
         "public_health_nurse": {
           "entry_base": null,
@@ -1416,20 +1662,28 @@
           "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         },
         "city_plumber": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 77412,
+          "top_base": 92916,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "MEA",
+          "notes": "Class 1675 Plumber, steps A-E monthly $6,451-$7,743 \u00d7 12."
         },
         "parks_worker": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
+          "entry_base": 49629,
+          "top_base": 58635,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
           "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": null,
+          "notes": "Class 1467 Grounds Maintenance Worker 1. Hourly $23.78-$28.19 (steps A-E)."
         },
         "police_detective": {
           "entry_base": null,
@@ -1495,6 +1749,54 @@
           "effective_date": "2024-25",
           "union": "SDEA",
           "notes": "Salary Plan 0160, 184-day. Grades 010 (BA) \u2192 014 (BA+90 w/MA). 17 steps; longevity stipend at step 76. Top base shown is Grade 010 (BA) Step 17 $93,087; max_with_longevity is highest Grade 014 Step 17 $121,652."
+        },
+        "code_enforcement_officer": {
+          "entry_base": 63684,
+          "top_base": 76740,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "MEA / Local 127",
+          "notes": "Code Compliance Officer (1356). 5 steps A-E hourly $30.51-$36.77; monthly $5,307-$6,395."
+        },
+        "accountant_auditor": {
+          "entry_base": 79620,
+          "top_base": 96804,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "MEA",
+          "notes": "Accountant 1 (1102). Steps A-E $38.15-$46.38/hr; monthly $6,635-$8,067."
+        },
+        "it_analyst": {
+          "entry_base": 55620,
+          "top_base": 67158,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "MEA",
+          "notes": "Programmer Analyst 1 (1747). Steps A-E $26.64-$32.17/hr; monthly $4,633-$5,595."
+        },
+        "recreation_supervisor": {
+          "entry_base": 75828,
+          "top_base": 91956,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "source_type": "city_salary_schedule",
+          "effective_date": "2026-01-01",
+          "union": "MEA",
+          "notes": "Supv Aging Recreation Specialist (1059) \u2014 proxy for Rec Supervisor; San Diego doesn't have a class titled simply 'Recreation Supervisor'. Hourly A $36.33 \u2192 E $44.06; monthly $6,319-$7,663."
         }
       }
     },
@@ -1745,12 +2047,17 @@
           "notes": "Public Safety Communications Dispatcher (8238). 6 steps; biweekly $4,366 entry \u2192 $5,572 top."
         },
         "librarian": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://careers.sf.gov/classifications/",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 103558,
+          "top_base": 125892,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=3630",
+          "cba_url": "https://sfdhr.org/mous",
+          "source_type": "city_classification_page",
+          "effective_date": "2026-01-03",
+          "union": "SEIU Local 1021",
+          "notes": "Class 3630 Librarian I. SF combined library system is city-county dept."
         },
         "building_inspector": {
           "entry_base": null,
@@ -1772,12 +2079,15 @@
           "notes": "Junior Engineer (Civil) (5201). Civil specialty range; mech/env specialties slightly higher."
         },
         "court_clerk": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://careers.sf.gov/classifications/",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 68068,
+          "top_base": 96668,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=1406",
+          "source_type": "city_classification_page",
+          "effective_date": "2026-01-03",
+          "union": "SEIU Local 1021",
+          "notes": "Class 1406 Senior Clerk used as closest city analog (SF Superior Court is state-employed). 10 steps."
         },
         "public_health_nurse": {
           "entry_base": null,
@@ -1799,12 +2109,17 @@
           "notes": "Utility Plumber (7388). Per MOU, new hires enter at Step 5; 5-step ladder."
         },
         "parks_worker": {
-          "entry_base": null,
-          "top_base": null,
-          "comparison_basis": "needs_research",
-          "source_type": "needs_research",
-          "source_url": "https://careers.sf.gov/classifications/",
-          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+          "entry_base": 80080,
+          "top_base": 97422,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "employer_type": "city",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=3417",
+          "cba_url": "https://sfdhr.org/mous",
+          "source_type": "city_classification_page",
+          "effective_date": "2026-01-03",
+          "union": "Laborers Local 261",
+          "notes": "Class 3417 Gardener. Steps 1-5."
         },
         "police_detective": {
           "entry_base": null,
@@ -2472,27 +2787,47 @@
     "civil_engineer": {
       "label": "Civil engineer (city)",
       "category": "Other public sector",
-      "rank_order": 4
+      "rank_order": 5
     },
     "court_clerk": {
       "label": "Court / municipal clerk",
       "category": "Other public sector",
-      "rank_order": 5
+      "rank_order": 6
     },
     "public_health_nurse": {
       "label": "Public health nurse",
       "category": "Other public sector",
-      "rank_order": 6
+      "rank_order": 7
     },
     "city_plumber": {
       "label": "City plumber (journey-level)",
       "category": "Other public sector",
-      "rank_order": 7
+      "rank_order": 11
     },
     "parks_worker": {
       "label": "Parks maintenance worker",
       "category": "Other public sector",
+      "rank_order": 12
+    },
+    "code_enforcement_officer": {
+      "label": "Code enforcement officer",
+      "category": "Other public sector",
+      "rank_order": 4
+    },
+    "accountant_auditor": {
+      "label": "Accountant / auditor (city)",
+      "category": "Other public sector",
       "rank_order": 8
+    },
+    "it_analyst": {
+      "label": "IT analyst / systems administrator",
+      "category": "Other public sector",
+      "rank_order": 9
+    },
+    "recreation_supervisor": {
+      "label": "Parks & Recreation supervisor",
+      "category": "Other public sector",
+      "rank_order": 10
     }
   }
 }

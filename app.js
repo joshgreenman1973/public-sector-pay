@@ -345,6 +345,9 @@ function renderRole() {
     }[r.comparison_basis] || null;
     const compBasisTag = compBasisLabel ? `<span class="tag ${compBasisLabel.cls}">${compBasisLabel.text}</span>` : "";
     const preRaiseTag = r.pre_raise ? `<span class="tag" style="background:#fef3c7;color:#92400e">Pre-raise</span>` : "";
+    const employerTag = (r.employer_type && r.employer_type !== "city")
+      ? `<span class="tag" style="background:#eef2ff;color:#3730a3">${r.employer_type.replace(/_/g, " ")}</span>`
+      : "";
     const longCell = r.max_with_longevity != null
       ? `${fmt$(r.max_with_longevity)}${r.max_years ? ` <span class="muted" style="font-size:11px">@${r.max_years}yr</span>` : ""}`
       : (r.top_base != null ? `<span class="muted" style="font-size:12px">no longevity tier published</span>` : "—");
@@ -354,7 +357,7 @@ function renderRole() {
       <td>${fmt$(r.top_base)}${r.years_to_top ? ` <span class="muted" style="font-size:11px">@${r.years_to_top}yr</span>` : ""}</td>
       <td>${fmtYrs(r.years_to_top)}</td>
       <td>${longCell}</td>
-      <td class="l">${compBasisTag}${preRaiseTag ? "<br>" + preRaiseTag : ""}</td>
+      <td class="l">${compBasisTag}${employerTag ? "<br>" + employerTag : ""}${preRaiseTag ? "<br>" + preRaiseTag : ""}</td>
       <td class="l">${sourceCell}${note}</td>
       <td class="l muted" style="font-size:12px">${r.effective_date || "—"}<br>${r.union || ""}</td>
     </tr>`;
@@ -468,6 +471,34 @@ function renderMethodology() {
 
     <h2>Important caveats</h2>
     <ul>${m.important_caveats.map(c => `<li>${escapeHtml(c)}</li>`).join("")}</ul>
+
+    <h2>Employer types</h2>
+    <p>Most roles in this dataset are city-employed, but several public services
+       are delivered by other public bodies in particular metros. Cells are tagged with the
+       relevant employer type when it isn't the city itself:</p>
+    <ul>
+      <li><strong>County</strong> — Public health nurses are typically employed by the
+          county health department in major metros (LA County DPH, San Diego County
+          HHSA, King County Public Health, Cook County Health, Harris County Public
+          Health, Bexar County, Dallas County HHS, Maricopa County). Probation officers
+          and tax assessors are also commonly county-employed.</li>
+      <li><strong>Library system</strong> — NYC's three library systems (NYPL, BPL,
+          Queens Library) are independent nonprofits with their own union contracts;
+          librarians there are not city employees. Seattle Public Library and DC
+          Public Library are similarly separate authorities.</li>
+      <li><strong>Park district</strong> — Chicago Park District is independent of
+          the City of Chicago.</li>
+      <li><strong>School district</strong> — All teacher cells are school district
+          employees, not city. NYC's DOE is technically a city agency but treated
+          as a separate employer here.</li>
+      <li><strong>Transit authority</strong> — Bus operators work for regional transit
+          agencies (MTA, MBTA, SEPTA, WMATA, LA Metro, SFMTA, MTS, King County Metro,
+          CTA, METRO Houston, DART, VIA, Valley Metro), not the city.</li>
+      <li><strong>Private contractor</strong> — Sanitation in Boston, San Francisco
+          and Seattle is performed by private firms (Capitol Waste Services, Recology,
+          Waste Management). San Diego MTS and Phoenix Valley Metro contract bus
+          operations to Transdev / First Transit.</li>
+    </ul>
 
     <h2>Source-type tally (${DATA.cities.length} cities × ${Object.keys(ROLE_LABELS).length} roles = ${DATA.cities.length * Object.keys(ROLE_LABELS).length} cells)</h2>
     <ul>${countList}</ul>
