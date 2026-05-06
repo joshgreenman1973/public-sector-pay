@@ -47,11 +47,23 @@ let state = { role: "police_officer", metric: "top_base", city: null, nycCol: fa
     for (const [k, v] of Object.entries(ROLE_REGISTRY)) ROLE_LABELS[k] = v.label;
   }
 
-  // Build role dropdown grouped by category
+  // Compute per-role verified-cell counts so we can hide empty roles + show coverage in the label
+  const roleCoverage = {};
+  for (const k of Object.keys(ROLE_REGISTRY || ROLE_LABELS)) {
+    let n = 0;
+    for (const c of DATA.cities) {
+      const r = c.roles[k];
+      if (r && r.top_base != null) n++;
+    }
+    roleCoverage[k] = n;
+  }
+
+  // Build role dropdown grouped by category — only show roles with at least 1 verified cell
   const roleSel = document.getElementById("role-pick");
   if (ROLE_REGISTRY) {
     const categories = {};
     for (const [k, v] of Object.entries(ROLE_REGISTRY)) {
+      if (roleCoverage[k] === 0) continue;  // hide empty roles
       (categories[v.category] = categories[v.category] || []).push([k, v]);
     }
     const catOrder = ["Police", "Fire", "Sanitation", "Transit", "Education", "Other public sector"];
@@ -60,16 +72,24 @@ let state = { role: "police_officer", metric: "top_base", city: null, nycCol: fa
       const og = document.createElement("optgroup"); og.label = cat;
       categories[cat].sort((a, b) => a[1].rank_order - b[1].rank_order);
       for (const [k, v] of categories[cat]) {
-        const o = document.createElement("option"); o.value = k; o.textContent = v.label;
+        const o = document.createElement("option");
+        o.value = k;
+        o.textContent = `${v.label} (${roleCoverage[k]}/${DATA.cities.length})`;
         og.appendChild(o);
       }
       roleSel.appendChild(og);
     }
   } else {
     for (const [k, v] of Object.entries(ROLE_LABELS)) {
-      const o = document.createElement("option"); o.value = k; o.textContent = v;
+      if (roleCoverage[k] === 0) continue;
+      const o = document.createElement("option"); o.value = k;
+      o.textContent = `${v} (${roleCoverage[k]}/${DATA.cities.length})`;
       roleSel.appendChild(o);
     }
+  }
+  // If state.role is now hidden, fall back to first available
+  if (!roleSel.querySelector(`option[value="${state.role}"]`)) {
+    state.role = roleSel.options[0]?.value;
   }
   roleSel.value = state.role;
 
@@ -159,12 +179,8 @@ function renderNYC() {
   for (const [roleKey, roleLabel] of Object.entries(ROLE_LABELS)) {
     const cells = roleData[roleKey];
     const nycCell = cells.find(c => c.city === "New York");
-    if (!nycCell || nycCell.excluded) {
-      rankParts.push(`<div class="meta-block" style="margin-bottom:14px">
-        <h2 style="font-size:16px">${roleLabel}</h2>
-        <p class="muted">NYC value not available for this role in the dataset.</p>
-      </div>`);
-      continue;
+    if (!nycCell || nycCell.excluded || nycCell.top_base == null) {
+      continue;  // skip roles without NYC data entirely (don't show empty blocks)
     }
 
     rankParts.push(buildRoleRankBlock(roleLabel, roleKey, cells, nycCell, allInOn));
@@ -396,7 +412,7 @@ function renderCity() {
   const rows = roleKeys.map(k => {
     const r = c.roles[k] || {};
     return { roleKey: k, roleLabel: ROLE_LABELS[k] || k, ...r };
-  });
+  }).filter(r => r.top_base != null || r.entry_base != null || r.source_type === "private_contractor");
   tbody.innerHTML = rows.map(r => {
     const tagInfo = SOURCE_TAGS[r.source_type] || { cls: "gap", text: r.source_type || "—" };
     const sourceCell = r.source_type === "private_contractor"
