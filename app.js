@@ -240,6 +240,10 @@ function renderRole() {
       union: r.union,
       agency: r.agency,
       notes: r.notes,
+      max_with_longevity: r.max_with_longevity,
+      max_years: r.max_years,
+      comparison_basis: r.comparison_basis,
+      pre_raise: r.pre_raise,
     };
   });
 
@@ -290,14 +294,26 @@ function renderRole() {
     const note = r.notes ? `<details><summary>note</summary>${escapeHtml(r.notes)}</details>` : "";
     const cls = r.source_type === "private_contractor" ? "na" :
                 (r.entry_base == null && r.top_base == null) ? "na" : "";
+    const compBasisLabel = {
+      post_progression_base: { text: "Post-step base", cls: "cba" },
+      approximate: { text: "Approximate", cls: "dept" },
+      partial: { text: "Partial", cls: "gap" },
+      needs_research: { text: "Gap", cls: "gap" },
+    }[r.comparison_basis] || null;
+    const compBasisTag = compBasisLabel ? `<span class="tag ${compBasisLabel.cls}">${compBasisLabel.text}</span>` : "";
+    const preRaiseTag = r.pre_raise ? `<span class="tag" style="background:#fef3c7;color:#92400e">Pre-raise</span>` : "";
+    const longCell = r.max_with_longevity != null
+      ? `${fmt$(r.max_with_longevity)}${r.max_years ? ` <span class="muted" style="font-size:11px">@${r.max_years}yr</span>` : ""}`
+      : (r.top_base != null ? `<span class="muted" style="font-size:12px">no longevity tier published</span>` : "—");
     return `<tr class="${cls}">
       <td>${r.city}${r.agency ? ` <span class="muted" style="font-size:11px">(${r.agency})</span>` : ""}</td>
       <td>${fmt$(r.entry_base)}</td>
-      <td>${fmt$(r.top_base)}</td>
+      <td>${fmt$(r.top_base)}${r.years_to_top ? ` <span class="muted" style="font-size:11px">@${r.years_to_top}yr</span>` : ""}</td>
       <td>${fmtYrs(r.years_to_top)}</td>
+      <td>${longCell}</td>
+      <td class="l">${compBasisTag}${preRaiseTag ? "<br>" + preRaiseTag : ""}</td>
       <td class="l">${sourceCell}${note}</td>
-      <td class="l muted" style="font-size:12px">${r.effective_date || "—"}</td>
-      <td class="l muted" style="font-size:12px">${r.union || "—"}</td>
+      <td class="l muted" style="font-size:12px">${r.effective_date || "—"}<br>${r.union || ""}</td>
     </tr>`;
   }).join("");
 
