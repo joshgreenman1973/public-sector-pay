@@ -263,7 +263,7 @@ function renderRole() {
     return d;
   };
   const nVals = valid.filter(r => r.top_base != null).length;
-  stats.appendChild(card("Cities with data", nVals + " of 12", "where role exists & figure published"));
+  stats.appendChild(card("Cities with data", nVals + " of " + DATA.cities.length, "where role exists & figure published"));
   stats.appendChild(card("Avg. entry base", fmt$(avgEntry), ""));
   stats.appendChild(card("Avg. top base", fmt$(avgTop), ""));
   stats.appendChild(card("Avg. years to top", avgYrs ? avgYrs.toFixed(1) + " yrs" : "—", ""));
