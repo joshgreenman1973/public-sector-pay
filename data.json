@@ -2,7 +2,7 @@
   "_metadata": {
     "compiled_date": "2026-05-05",
     "compiled_by": "Researched directly from city/agency CBAs, official pay schedules, and department careers pages.",
-    "scope": "Apples-to-apples comparison of base annual salary for the same four roles across 13 large U.S. cities.",
+    "scope": "Side-by-side comparison of contract base salary across 13 large U.S. cities for police (5 ranks), firefighter, sanitation, transit, K-12 teacher and 8 other public-sector occupations. All figures sourced from city CBAs, official salary schedules and department careers pages \u2014 every cell links to its source.",
     "salary_basis": "ALL FIGURES ARE BASE SALARY ONLY. Two top-step columns are shown: 'Top base (post-progression)' is the highest base salary an officer reaches by completing the standard step ladder, BEFORE any longevity bonus tiers \u2014 this is the apples-to-apples comparison field. 'Max with longevity (rank-and-file)' is the highest base achievable while staying at the same rank, including all longevity steps the contract provides for that rank \u2014 provided where published. Both EXCLUDE overtime, holiday pay, uniform allowance, night differential, education incentives (Boston Quinn Bill, etc.), certification pay, court time, detail/specialty pay, and benefits.",
     "rank_clarification": "All police, fire, sanitation and transit-bus-operator figures are for the LOWEST RANK in that role's classification (rank-and-file patrol officer, rank-and-file firefighter, rank-and-file refuse collector, rank-and-file bus operator). Pay scales for promoted ranks (detective, sergeant, lieutenant, captain; fire engineer, lieutenant, captain, battalion chief; sanitation equipment operator, supervisor; transit dispatcher, supervisor) are SEPARATE schedules and are not included. Most officers spend the bulk of their careers at the lowest rank, so this is the meaningful cross-city comparison.",
     "roles_included": {
@@ -109,6 +109,121 @@
           "union": "TWU Local 100",
           "agency": "MTA NYCT",
           "notes": "Top hourly $41.0875 \u00d7 2,080 = $85,462 annualized. CBA term May 2023 \u2013 May 2026. Entry rate not in published wage chart \u2014 see CBA Appendix."
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 154751,
+          "years_to_top": null,
+          "max_with_longevity": 158093,
+          "max_years": null,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://nycdetectives.org/current-salary-charts/",
+          "cba_url": "https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page",
+          "source_type": "union_wage_chart",
+          "effective_date": "2025-06-01",
+          "union": "DEA",
+          "notes": "Detective 1st Grade top base under DEA CBA 6/1/2022-5/31/2027 after 6/1/2025 3.50% raise. Det 2nd Grade $134,819; Det 3rd Grade $119,980. 2.25% service differential ($2,721+) at 5 yrs in rank. NB: 'Detective Specialist' titles under PBA contract are different and lower."
+        },
+        "police_sergeant": {
+          "entry_base": 109651,
+          "top_base": 134819,
+          "years_to_top": 6,
+          "max_with_longevity": 140212,
+          "max_years": 6,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/sba-unit-agreement-2021-2026.pdf",
+          "cba_url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/sba-unit-agreement-2021-2026.pdf",
+          "source_type": "cba",
+          "effective_date": "2024-12-10",
+          "union": "SBA",
+          "notes": "Per April 14, 2025 SBA Unit Agreement: incumbents below top step on 12/10/2024 moved to top step ($134,819). New sergeants follow 6-step schedule (Step 1 $109,651 \u2192 Step 6 $134,819). Top step rises to $140,212 effective 12/10/2025."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": null,
+          "years_to_top": null,
+          "comparison_basis": "needs_research",
+          "source_url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/lba-10-5-2023-unit-bargaining-agreement.pdf",
+          "source_type": "needs_research",
+          "union": "LBA",
+          "notes": "LBA Unit Bargaining Agreement 2022-2027 PDF on OLR is image-only; could not extract base figures. 2017 base was $124,373 top step. Practitioner sources suggest current top base ~$155-175K but not from official source."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": null,
+          "years_to_top": null,
+          "comparison_basis": "needs_research",
+          "source_url": "https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page",
+          "source_type": "needs_research",
+          "union": "CEA",
+          "notes": "Most recent posted CEA executed contract on OLR is 2003-2012; current CEA agreement details not located in extractable official PDF. Practitioner sources suggest current top base ~$180-200K (unverified)."
+        },
+        "dispatcher_911": {
+          "entry_base": 42976,
+          "top_base": 58189,
+          "years_to_top": 5,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.nyc.gov/site/nypd/careers/civilians/police-communications-technicians.page",
+          "source_type": "department_careers_page",
+          "effective_date": "2024",
+          "union": "CWA Local 1180 / DC 37",
+          "notes": "Police Communications Technician. Top step ~5 yrs; base only, excludes night-shift differential."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.nyc.gov/site/dcas/employees/wage-schedules.page",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -166,6 +281,70 @@
           "union": "SMART-TD",
           "agency": "LA Metro",
           "notes": "Years-to-top reduces to 5 effective July 1, 2026. Hourly $25.81 entry \u2192 $42.57 top \u00d7 2,080."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://personnel.lacity.gov/jobs/position-information/index.cfm?job_id=2207",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://cao.lacity.gov/mous",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://cao.lacity.gov/mous",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://cao.lacity.gov/mous",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://cao.lacity.gov/mous",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://cao.lacity.gov/mous",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://cao.lacity.gov/mous",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://cao.lacity.gov/mous",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -227,6 +406,126 @@
           "union": "ATU Local 241",
           "agency": "CTA",
           "notes": "$27.13/hr \u2192 $41.11/hr \u00d7 2,080. 45 months to top."
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 142962,
+          "years_to_top": 20,
+          "max_with_longevity": 152004,
+          "max_years": 30,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "cba_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01",
+          "union": "FOP Lodge 7",
+          "notes": "Schedule D Grade 3 Detective. Step 9 (20yr) = $142,962 max rate. Longevity: Step 10 (25yr) $147,582; Step 11 red-circle (30yr svc before 1/1/2006) $152,004."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 136230,
+          "years_to_top": 20,
+          "max_with_longevity": 144852,
+          "max_years": 30,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "cba_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01",
+          "union": "PBPA Unit 156A",
+          "notes": "Schedule E Grade 3 Sergeant (titles 9171/9176). Step 9 (20yr) max rate $136,230. Longevity Step 10 (25yr) $140,640; Step 11 red-circle $144,852."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 153240,
+          "years_to_top": 20,
+          "max_with_longevity": 161910,
+          "max_years": 30,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "cba_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01",
+          "union": "PBPA Unit 156B",
+          "notes": "Schedule E Grade 4 Lieutenant (title 9173). Step 9 max rate $153,240. Longevity Step 10 (25yr) $157,926; Step 11 red-circle $161,910."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 167628,
+          "years_to_top": 20,
+          "max_with_longevity": 174264,
+          "max_years": 30,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "cba_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "source_type": "city_pay_plan_schedule",
+          "effective_date": "2025-01-01",
+          "union": "PBPA Unit 156",
+          "notes": "Schedule E Grade 5 Captain (title 9175). Step 9 max rate $167,628. Longevity Step 10 (25yr) $171,780; Step 11 red-circle $174,264."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.chicago.gov/content/dam/city/depts/dol/general/2025-Classification-and-Pay-Plan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -284,6 +583,70 @@
           "union": "TWU Local 260",
           "agency": "METRO Houston",
           "notes": "Current TWU 260 contract terms not publicly posted."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.houstontx.gov/hr/compensation/job-classifications.html",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -341,6 +704,70 @@
           "union": "ATU Local 1433 (via contractors)",
           "agency": "Valley Metro",
           "notes": "Valley Metro contracts bus operations to private companies (Transdev, First Transit). Operator wages set by contractor CBAs, not Valley Metro directly."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phoenix.gov/content/dam/phoenix/hrsite/documents/class-and-comp-study/Salary-Range-Report.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -398,6 +825,100 @@
           "agency": "SEPTA",
           "notes": "$25.17/hr entry \u00d7 2,080; $33.57/hr top \u00d7 2,080. Subsequent 3.5%/yr raises in Dec 2025 successor agreement raise these by ~7% over the next two years.",
           "comparison_basis": "post_progression_base"
+        },
+        "police_detective": {
+          "comparison_basis": "needs_research",
+          "source_url": "https://fop5.org/wp-content/uploads/2025/09/OFFICIAL-FY-2026-PAYSCALES-FROM-RECRUIT-TO-C.-INSPt.pdf",
+          "cba_url": "https://fop5.org/wp-content/uploads/2025/08/FOP-5-Act-111-Award-2025-2027.pdf",
+          "source_type": "needs_research",
+          "effective_date": "2025-07-01",
+          "union": "FOP Lodge 5",
+          "notes": "Official FY2026 FOP Lodge 5 payscale PDF (recruit to chief inspector) is scanned image; not text-extractable. 2025-2027 Act 111 Award gives 3.0%+1.5%+3.0%+1.5%."
+        },
+        "police_sergeant": {
+          "comparison_basis": "needs_research",
+          "source_url": "https://fop5.org/wp-content/uploads/2025/09/OFFICIAL-FY-2026-PAYSCALES-FROM-RECRUIT-TO-C.-INSPt.pdf",
+          "source_type": "needs_research",
+          "union": "FOP Lodge 5",
+          "notes": "PPD career page indicates ~14% pay raise on promotion from corporal/detective to sergeant. Needs OCR."
+        },
+        "police_lieutenant": {
+          "comparison_basis": "needs_research",
+          "source_url": "https://fop5.org/wp-content/uploads/2025/09/OFFICIAL-FY-2026-PAYSCALES-FROM-RECRUIT-TO-C.-INSPt.pdf",
+          "source_type": "needs_research",
+          "union": "FOP Lodge 5",
+          "notes": "Scanned image PDF. Needs OCR."
+        },
+        "police_captain": {
+          "comparison_basis": "needs_research",
+          "source_url": "https://fop5.org/wp-content/uploads/2025/09/OFFICIAL-FY-2026-PAYSCALES-FROM-RECRUIT-TO-C.-INSPt.pdf",
+          "source_type": "needs_research",
+          "union": "FOP Lodge 5",
+          "notes": "Scanned image PDF. Needs OCR."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.phila.gov/departments/office-of-human-resources/careers/pay-ranges/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -455,6 +976,70 @@
           "union": "ATU Local 694",
           "agency": "VIA Metropolitan Transit",
           "notes": "Entry $22.45/hr; $25.25/hr at month 12. Top hourly not publicly posted. Negotiations active 2024-25."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sanantonio.gov/Portals/0/Files/EmployeeInformation/Compensation/PayPlan.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -510,6 +1095,70 @@
           "union": "Teamsters Local 542 / 683",
           "agency": "San Diego MTS",
           "notes": "MTS bus operations are run by private contractors (Transdev). Entry $22.71/hr \u00d7 2,080. Top hourly not publicly posted."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.sandiego.gov/sites/default/files/saltable.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -569,6 +1218,70 @@
           "agency": "DART",
           "notes": "Entry $18.50/hr, top $28.75/hr. DART/ATU 1338 contract not posted on agency site; figures from public salary aggregators \u2014 verify. DART/ATU 1338 contract not posted on agency site; figures from public salary aggregators.",
           "comparison_basis": "approximate"
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dallascityhall.com/departments/humanresources/PublishingImages/Pages/classification_compensation/Civilian%20Pay%20Schedule%2001.01.25.pdf",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -627,6 +1340,79 @@
           "agency": "SFMTA",
           "notes": "Class 9163 Transit Operator, $31.35/hr \u2192 $48.25/hr \u00d7 2,080. CBA term Jul 2024 \u2013 Jun 2027. Class 9163 Transit Operator, Step 5 of 5.",
           "comparison_basis": "post_progression_base"
+        },
+        "dispatcher_911": {
+          "entry_base": 113516,
+          "top_base": 144872,
+          "years_to_top": 5,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=8238",
+          "source_type": "city_classification_page",
+          "effective_date": "2026-01-03",
+          "union": "SEIU Local 1021",
+          "notes": "Public Safety Communications Dispatcher (8238). 6 steps; biweekly $4,366 entry \u2192 $5,572 top."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://careers.sf.gov/classifications/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://careers.sf.gov/classifications/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": 106210,
+          "top_base": 129064,
+          "years_to_top": 5,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=5201",
+          "source_type": "city_classification_page",
+          "effective_date": "2026",
+          "union": "IFPTE Local 21",
+          "notes": "Junior Engineer (Civil) (5201). Civil specialty range; mech/env specialties slightly higher."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://careers.sf.gov/classifications/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://careers.sf.gov/classifications/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": 124566,
+          "top_base": 151450,
+          "years_to_top": 4,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://careers.sf.gov/classifications/?classCode=7388",
+          "source_type": "city_classification_page",
+          "effective_date": "2026-01-03",
+          "union": "UA Plumbers & Pipefitters Local 38",
+          "notes": "Utility Plumber (7388). Per MOU, new hires enter at Step 5; 5-step ladder."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://careers.sf.gov/classifications/",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -687,6 +1473,104 @@
           "agency": "MBTA",
           "notes": "Entry $30/hr \u00d7 2,080. Top hourly not in announcement; estimated ~$35-36/hr after 18% cumulative 4-year increase. Entry $30/hr from MBTA announcement; top hourly not in announcement; estimated ~$35-36/hr after 18% cumulative 4-yr increase.",
           "comparison_basis": "approximate"
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 194000,
+          "years_to_top": null,
+          "comparison_basis": "approximate",
+          "source_url": "https://www.boston.gov/sites/default/files/file/2025/08/BPSOF%20Executive%20Order%20and%20Salary%20Scale%202020-2024.pdf",
+          "cba_url": "https://www.boston.gov/sites/default/files/file/2024/06/BPSOF%20MOA%202020-2025_Final_Signed.pdf",
+          "source_type": "agency_announcement",
+          "effective_date": null,
+          "union": "BPSOF",
+          "notes": "$194,000 figure cited by Boston Globe (3/3/2026) for BPD captain base salary; not independently verified from extractable BPSOF salary scale (PDF is scanned image)."
+        },
+        "police_detective": {
+          "comparison_basis": "needs_research",
+          "source_url": "https://www.boston.gov/sites/default/files/file/2025/08/BPDBS%2C%20Executive%20Order%20and%20Salary%20Scale%202020-2024.pdf",
+          "cba_url": "https://www.boston.gov/sites/default/files/file/2024/05/BPDBS%20MOA%202020-2025_Final_Signed.pdf",
+          "source_type": "needs_research",
+          "union": "BPDBS",
+          "notes": "BPDBS salary scale PDF is scanned image; not text-extractable. Needs OCR pass."
+        },
+        "police_sergeant": {
+          "comparison_basis": "needs_research",
+          "source_url": "https://www.boston.gov/sites/default/files/file/2025/08/BPSOF%20Executive%20Order%20and%20Salary%20Scale%202020-2024.pdf",
+          "source_type": "needs_research",
+          "union": "BPSOF",
+          "notes": "Salary scale shows top sergeant 3rd-year base around $109-117k depending on tour but rank labels are image-embedded; could not deterministically map figures to rank without OCR."
+        },
+        "police_lieutenant": {
+          "comparison_basis": "needs_research",
+          "source_url": "https://www.boston.gov/sites/default/files/file/2025/08/BPSOF%20Executive%20Order%20and%20Salary%20Scale%202020-2024.pdf",
+          "source_type": "needs_research",
+          "union": "BPSOF",
+          "notes": "Per Boston Globe 2025 reporting, top-paid Boston cops include lieutenants with base ~$160-180k (unverified)."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.boston.gov/departments/human-resources",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.boston.gov/departments/human-resources",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.boston.gov/departments/human-resources",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.boston.gov/departments/human-resources",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.boston.gov/departments/human-resources",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.boston.gov/departments/human-resources",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.boston.gov/departments/human-resources",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.boston.gov/departments/human-resources",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -745,6 +1629,70 @@
           "agency": "King County Metro",
           "notes": "Entry $27.59/hr \u00d7 2,080. Top step not extracted from CBA appendix. Contract Nov 2022 \u2013 Oct 2025; ~17% cumulative increase suggests top hourly ~$42-45. Entry $27.59/hr; top step not extracted from ATU 587 CBA appendix. ~17% cumulative increase suggests top hourly ~$42-45.",
           "comparison_basis": "partial"
+        },
+        "dispatcher_911": {
+          "entry_base": 67000,
+          "top_base": 90000,
+          "comparison_basis": "approximate",
+          "source_url": "https://www.seattle.gov/human-resources/compensation",
+          "source_type": "department_careers_page",
+          "notes": "Police Communications Dispatcher I. Range from City job postings; needs cross-check vs current pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.seattle.gov/human-resources/compensation",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.seattle.gov/human-resources/compensation",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.seattle.gov/human-resources/compensation",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.seattle.gov/human-resources/compensation",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.seattle.gov/human-resources/compensation",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.seattle.gov/human-resources/compensation",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://www.seattle.gov/human-resources/compensation",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     },
@@ -804,8 +1752,215 @@
           "agency": "WMATA",
           "notes": "Entry $29.49/hr \u00d7 2,080. New CBA Jul 2024\u2013Jun 2028: 0%/3%/3%/3.5%. Entry $29.49/hr. New CBA Jul 2024\u2013Jun 2028: 0%/3%/3%/3.5%.",
           "comparison_basis": "post_progression_base"
+        },
+        "police_detective": {
+          "entry_base": null,
+          "top_base": 138252,
+          "years_to_top": null,
+          "max_with_longevity": 166829,
+          "max_years": 30,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://dchr.dc.gov/sites/default/files/dc/sites/DCHR/page_content/attachments/FY26%20MPD%20Union.pdf",
+          "cba_url": "https://dchr.dc.gov/sites/default/files/dc/sites/DCHR/page_content/attachments/FY26%20MPD%20Union.pdf",
+          "source_type": "official_salary_schedule",
+          "effective_date": "2025-10-05",
+          "union": "FOP/MPD Labor Committee",
+          "notes": "Class 03 Detective FY26 schedule (4.25% raise 10/5/2025). Pay #3 Step 7 (top + 5-yr retention) = $138,252. Pay #1 base Step 7 = $126,361. Longevity 30 YOS Pay #8 Step 7 = $166,829."
+        },
+        "police_sergeant": {
+          "entry_base": null,
+          "top_base": 143054,
+          "years_to_top": null,
+          "max_with_longevity": 173745,
+          "max_years": 30,
+          "comparison_basis": "post_progression_base",
+          "source_url": "https://dchr.dc.gov/sites/default/files/dc/sites/DCHR/page_content/attachments/FY26%20MPD%20Union.pdf",
+          "cba_url": "https://dchr.dc.gov/sites/default/files/dc/sites/DCHR/page_content/attachments/FY26%20MPD%20Union.pdf",
+          "source_type": "official_salary_schedule",
+          "effective_date": "2025-10-05",
+          "union": "FOP/MPD Labor Committee",
+          "notes": "Class 04 Sergeant. Pay #1 Step 6 = $130,750 base. Pay #3 Step 6 (5-yr retention top) = $143,054. Longevity 30 YOS Step 6 = $173,745."
+        },
+        "police_lieutenant": {
+          "entry_base": null,
+          "top_base": 135535,
+          "years_to_top": null,
+          "max_with_longevity": 157416,
+          "max_years": 30,
+          "comparison_basis": "approximate",
+          "pre_raise": true,
+          "source_url": "https://dchr.dc.gov/sites/default/files/dc/sites/dchr/page_content/attachments/non_union_police_fy23.pdf",
+          "source_type": "official_salary_schedule",
+          "effective_date": "2022-10-09",
+          "union": "Non-union (MPD Lt is non-bargaining)",
+          "notes": "FY23 schedule (only one located). Class 05 Lieutenant Pay #4 Step 5 (5-yr retention top) = $135,535. Pay #1 base Step 5 = $123,878. FY26 figures should be ~10-12% higher reflecting subsequent COLAs."
+        },
+        "police_captain": {
+          "entry_base": null,
+          "top_base": 150904,
+          "years_to_top": null,
+          "max_with_longevity": 177345,
+          "max_years": 30,
+          "comparison_basis": "approximate",
+          "pre_raise": true,
+          "source_url": "https://dchr.dc.gov/sites/default/files/dc/sites/dchr/page_content/attachments/non_union_police_fy23.pdf",
+          "source_type": "official_salary_schedule",
+          "effective_date": "2022-10-09",
+          "union": "Non-union",
+          "notes": "FY23 schedule. Class 07 Captain Pay #4 Step 4 (5-yr retention top) = $150,904. Pay #1 base Step 4 = $137,925. FY26 figures should be ~10-12% higher."
+        },
+        "dispatcher_911": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "librarian": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "building_inspector": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "civil_engineer": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "court_clerk": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "public_health_nurse": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "city_plumber": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
+        },
+        "parks_worker": {
+          "entry_base": null,
+          "top_base": null,
+          "comparison_basis": "needs_research",
+          "source_type": "needs_research",
+          "source_url": "https://dchr.dc.gov/page/fiscal-year-2025-union-salary-schedules",
+          "notes": "Data not yet extracted. Click source link to look up in city's pay schedule."
         }
       }
     }
-  ]
+  ],
+  "role_definitions": {
+    "police_officer": {
+      "label": "Police: patrol officer (rank-and-file)",
+      "category": "Police",
+      "rank_order": 1
+    },
+    "police_detective": {
+      "label": "Police: detective",
+      "category": "Police",
+      "rank_order": 2
+    },
+    "police_sergeant": {
+      "label": "Police: sergeant",
+      "category": "Police",
+      "rank_order": 3
+    },
+    "police_lieutenant": {
+      "label": "Police: lieutenant",
+      "category": "Police",
+      "rank_order": 4
+    },
+    "police_captain": {
+      "label": "Police: captain",
+      "category": "Police",
+      "rank_order": 5
+    },
+    "firefighter": {
+      "label": "Fire: firefighter (rank-and-file)",
+      "category": "Fire",
+      "rank_order": 1
+    },
+    "sanitation_worker": {
+      "label": "Sanitation worker (city-employed)",
+      "category": "Sanitation",
+      "rank_order": 1
+    },
+    "transit_bus_operator": {
+      "label": "Transit bus operator (regional authority)",
+      "category": "Transit",
+      "rank_order": 1
+    },
+    "teacher": {
+      "label": "K-12 public school teacher",
+      "category": "Education",
+      "rank_order": 1
+    },
+    "dispatcher_911": {
+      "label": "911 dispatcher / public safety telecommunicator",
+      "category": "Other public sector",
+      "rank_order": 1
+    },
+    "librarian": {
+      "label": "Public librarian",
+      "category": "Other public sector",
+      "rank_order": 2
+    },
+    "building_inspector": {
+      "label": "Building inspector",
+      "category": "Other public sector",
+      "rank_order": 3
+    },
+    "civil_engineer": {
+      "label": "Civil engineer (city)",
+      "category": "Other public sector",
+      "rank_order": 4
+    },
+    "court_clerk": {
+      "label": "Court / municipal clerk",
+      "category": "Other public sector",
+      "rank_order": 5
+    },
+    "public_health_nurse": {
+      "label": "Public health nurse",
+      "category": "Other public sector",
+      "rank_order": 6
+    },
+    "city_plumber": {
+      "label": "City plumber (journey-level)",
+      "category": "Other public sector",
+      "rank_order": 7
+    },
+    "parks_worker": {
+      "label": "Parks maintenance worker",
+      "category": "Other public sector",
+      "rank_order": 8
+    }
+  }
 }

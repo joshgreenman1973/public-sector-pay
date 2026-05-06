@@ -2,12 +2,14 @@
 const fmt$ = n => (n == null) ? "—" : "$" + Math.round(n).toLocaleString();
 const fmtYrs = n => (n == null) ? "—" : (n + " yr" + (n === 1 ? "" : "s"));
 
-const ROLE_LABELS = {
-  police_officer: "Police officer (rank-and-file patrol)",
-  firefighter: "Firefighter (rank-and-file)",
-  sanitation_worker: "Sanitation worker (city-employed refuse collection)",
-  transit_bus_operator: "Transit bus operator (regional transit authority)",
+// ROLE_LABELS used to be hard-coded; now derived from data.role_definitions at init time.
+let ROLE_LABELS = {
+  police_officer: "Police: patrol officer (rank-and-file)",
+  firefighter: "Fire: firefighter (rank-and-file)",
+  sanitation_worker: "Sanitation worker (city-employed)",
+  transit_bus_operator: "Transit bus operator (regional authority)",
 };
+let ROLE_REGISTRY = null;  // populated from data.role_definitions
 
 const SOURCE_TAGS = {
   cba: { cls: "cba", text: "CBA" },
@@ -38,11 +40,36 @@ let state = { role: "police_officer", metric: "top_base", city: null, nycCol: fa
 (async function init() {
   DATA = await fetch("data.json").then(r => r.json());
 
-  // Build role dropdown
+  // Build role registry from data, fall back to defaults if missing
+  if (DATA.role_definitions) {
+    ROLE_REGISTRY = DATA.role_definitions;
+    ROLE_LABELS = {};
+    for (const [k, v] of Object.entries(ROLE_REGISTRY)) ROLE_LABELS[k] = v.label;
+  }
+
+  // Build role dropdown grouped by category
   const roleSel = document.getElementById("role-pick");
-  for (const [k, v] of Object.entries(ROLE_LABELS)) {
-    const o = document.createElement("option"); o.value = k; o.textContent = v;
-    roleSel.appendChild(o);
+  if (ROLE_REGISTRY) {
+    const categories = {};
+    for (const [k, v] of Object.entries(ROLE_REGISTRY)) {
+      (categories[v.category] = categories[v.category] || []).push([k, v]);
+    }
+    const catOrder = ["Police", "Fire", "Sanitation", "Transit", "Education", "Other public sector"];
+    for (const cat of catOrder) {
+      if (!categories[cat]) continue;
+      const og = document.createElement("optgroup"); og.label = cat;
+      categories[cat].sort((a, b) => a[1].rank_order - b[1].rank_order);
+      for (const [k, v] of categories[cat]) {
+        const o = document.createElement("option"); o.value = k; o.textContent = v.label;
+        og.appendChild(o);
+      }
+      roleSel.appendChild(og);
+    }
+  } else {
+    for (const [k, v] of Object.entries(ROLE_LABELS)) {
+      const o = document.createElement("option"); o.value = k; o.textContent = v;
+      roleSel.appendChild(o);
+    }
   }
   roleSel.value = state.role;
 
@@ -353,9 +380,22 @@ function renderCity() {
     + card("MSA population", c.msa_pop_million.toFixed(1) + "M", "U.S. Census, MSA estimate");
 
   const tbody = document.querySelector("#tbl-city tbody");
-  const rows = Object.entries(ROLE_LABELS).map(([k, label]) => {
+  // Order roles by category then rank_order, using the registry
+  let roleKeys;
+  if (ROLE_REGISTRY) {
+    const catOrder = ["Police", "Fire", "Sanitation", "Transit", "Education", "Other public sector"];
+    const catIdx = k => catOrder.indexOf(ROLE_REGISTRY[k]?.category || "Other");
+    roleKeys = Object.keys(ROLE_REGISTRY).sort((a, b) => {
+      const ca = catIdx(a), cb = catIdx(b);
+      if (ca !== cb) return ca - cb;
+      return (ROLE_REGISTRY[a].rank_order || 0) - (ROLE_REGISTRY[b].rank_order || 0);
+    });
+  } else {
+    roleKeys = Object.keys(ROLE_LABELS);
+  }
+  const rows = roleKeys.map(k => {
     const r = c.roles[k] || {};
-    return { roleKey: k, roleLabel: label, ...r };
+    return { roleKey: k, roleLabel: ROLE_LABELS[k] || k, ...r };
   });
   tbody.innerHTML = rows.map(r => {
     const tagInfo = SOURCE_TAGS[r.source_type] || { cls: "gap", text: r.source_type || "—" };
